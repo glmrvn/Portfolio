@@ -19,6 +19,7 @@ body {
 h1 {
     font-size: 40px;
     font-weight: 600;
+    color: #999;
 }
 
 h2 {
@@ -31,12 +32,11 @@ a {
     transition: .2s;
 }
 
-a:hover {
-    color: #0080FF;
-}
+a:hover { color: #0080FF; }
+.black-text { color: black; }
 
 /* Menu */
-.menu {
+.top {
     display: flex;
     justify-content: space-between;
     margin-top: 24px;
@@ -44,10 +44,17 @@ a:hover {
 
 .name { padding-left: 24px; }
 .menu-links { margin-right: 16px; }
-.menu a { padding: 8px; }
+.top a { padding: 8px; }
 
 /* About */
-#about {
+.about {
     margin-top: 240px;
     width: 780px;
 }
+
+/* Contacts block */
+.contacts { 
+    margin-top: 300px;
+    margin-bottom: 300px;
+}
+.contacts a {color: #F14900;}
