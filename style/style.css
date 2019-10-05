@@ -32,7 +32,8 @@ a {
     transition: .2s;
 }
 
-a:hover { color: #0080FF; }
+a:hover { color: #F14900; }
+
 .black-text { color: black; }
 
 /* Menu */
@@ -44,7 +45,7 @@ a:hover { color: #0080FF; }
 
 .name { padding-left: 24px; }
 .menu-links { margin-right: 16px; }
-.top a { padding: 8px; }
+.top a, .bottom-menu a { padding: 8px; }
 
 /* About */
 .about {
@@ -57,4 +58,18 @@ a:hover { color: #0080FF; }
     margin-top: 300px;
     margin-bottom: 300px;
 }
-.contacts a {color: #F14900;}
+.contacts a { color: #F14900; }
+
+.contacts a:hover {
+    text-decoration: underline;
+    opacity: 0.7;
+}
+
+/* Bottom menu */
+.bottom-menu {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    border-top: 1px solid #EBEBEB;
+    padding-top: 20px;
+}
