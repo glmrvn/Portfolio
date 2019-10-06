@@ -1,4 +1,4 @@
-html { width: 100%; min-height: 100%; position: relative; overflow-x: hidden; }
+html { width: 100%; min-height: 100%; position: relative; overflow-x: hidden; scroll-behavior: smooth; }
 
 body {
     -webkit-font-smoothing: antialiased;
@@ -70,13 +70,19 @@ a:hover { color: #F14900; }
     margin-top: 60px;
 }
 
-.case-item img { width: 300px; }
+.case-item img { width: 300px; transition: 0.2s; }
+
+.case-item img:hover {
+    opacity: 0.9;
+}
 
 .case-name {
     color: #999;
     font-size: 24px;
     padding-top: 20px;
+    transition: 0.2s;
 }
+.case-name:hover, .case-name:hover span { opacity: 0.8;  }
 
 /* Contacts block */
 .contacts { 
