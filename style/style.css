@@ -56,9 +56,18 @@ a:hover { color: #F14900; }
 /* Cases */
 #cases {
     display: flex;
-    justify-content: space-between;
-    margin-top: 100px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 60px;
     padding-top: 60px;
+}
+
+.case-item{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-top: 60px;
 }
 
 .case-item img { width: 300px; }
