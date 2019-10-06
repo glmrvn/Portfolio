@@ -53,6 +53,22 @@ a:hover { color: #F14900; }
     width: 780px;
 }
 
+/* Cases */
+#cases {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    padding-top: 60px;
+}
+
+.case-item img { width: 300px; }
+
+.case-name {
+    color: #999;
+    font-size: 24px;
+    padding-top: 20px;
+}
+
 /* Contacts block */
 .contacts { 
     margin-top: 300px;
