@@ -1,0 +1,11 @@
+/* Mobile styles*/
+@media screen and (max-width: 414px) {
+    .about { width: 100%; margin-top: 120px; }
+    .about h1 { width:100%; font-size: 24px; }
+    .wrap { width: 90%; margin: 0 auto; }
+    .top, .bottom-menu { font-size: 16px; }
+    .name { padding-left: 16px; }
+    .menu-links { margin-right: 8px; }
+    .case-item img { width: 100%; }
+    #cases { flex: unset; display: unset; }
+}

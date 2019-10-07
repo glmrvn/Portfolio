@@ -9,18 +9,6 @@ body {
     font-weight: 600;
 }
 
-/* Mobile styles*/
-@media screen and (max-width: 414px) {
-    .about { width: 100% !important; margin-top: 120px !important; }
-    .about h1 { width:100%; font-size: 24px; }
-    .wrap { width: 90%; margin: 0 auto; }
-    .top, .bottom-menu { font-size: 16px; }
-    .name { padding-left: 16px !important; }
-    .menu-links { margin-right: 8px !important; }
-    .case-item img { width: 100% !important; }
-    #cases { flex: unset !important; display: unset !important; }
-}
-
 /* Wrap styles */
 .wrap {
     width: 940px;
