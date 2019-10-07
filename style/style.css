@@ -98,9 +98,7 @@ a:hover { color: #F14900; }
 
 /* Bottom menu */
 .bottom-menu {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 24px;
     border-top: 1px solid #EBEBEB;
-    padding-top: 20px;
+    padding: 20px 0 20px 0;
+    text-align: center;
 }
