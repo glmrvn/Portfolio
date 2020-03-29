@@ -101,4 +101,8 @@ a:hover { color:black; }
     border-top: 1px solid #EBEBEB;
     padding: 20px 0 20px 0;
     text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
 }
