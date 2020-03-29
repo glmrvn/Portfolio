@@ -44,7 +44,7 @@ a:hover { color:black; }
 }
 
 .name { padding-left: 24px; }
-.menu-links { margin-right: 16px; }
+.menu-links, .title-links a { margin-right: 16px; }
 .top a, .bottom-menu a { padding: 8px; }
 
 /* About */
