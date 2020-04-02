@@ -65,37 +65,6 @@ a:hover { color:black; }
 
 .back { padding-left: 24px; position: fixed; top: 24px; }
 
-/* Cases */
-#cases {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-top: 60px;
-    padding-top: 60px;
-}
-
-.case-item{
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    margin-top: 60px;
-}
-
-.case-item img { width: 300px; transition: 0.2s; }
-
-.case-item img:hover {
-    opacity: 0.9;
-}
-
-.case-name {
-    color: #aaa;
-    font-size: 24px;
-    padding-top: 20px;
-    transition: 0.2s;
-}
-.case-name:hover, .case-name:hover span { opacity: 0.8;  }
-
 /* Contacts block */
 .contacts { 
     margin-top: 300px;
