@@ -39,7 +39,7 @@ a:hover { color:black; }
     justify-content: space-between;
     margin-top: 24px;
 }
-
+.back { padding-left: 24px; position: fixed; top: 24px; }
 .name { padding-left: 24px; }
 .menu-links, .title-links a { margin-right: 16px; }
 .top a, .bottom-menu a { padding: 8px; }
