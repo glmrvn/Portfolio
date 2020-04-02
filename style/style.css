@@ -16,21 +16,18 @@ body {
 }
 
 /* Text and link styles */
+p, a, h1 { color: #aaa; }
+
 h1 {
     font-size: 40px;
     font-weight: 600;
-    color: #aaa;
-}
-
-h2 {
-    font-size: 24px;
 }
 
 a {
-    color: #aaa;
     text-decoration: none;
     transition: .2s;
 }
+
 
 a:hover { color:black; }
 
@@ -51,6 +48,18 @@ a:hover { color:black; }
 .about {
     margin-top: 240px;
     width: 720px;
+}
+
+/* Work expirience */
+.work-case { margin-top: 120px; }
+
+.work-title { margin-bottom: 4px; }
+
+.work-case img { width: 940px; margin-top: 24px; }
+
+.date {
+    margin-top: 0px;
+    padding-bottom: 16px;
 }
 
 /* Cases */
