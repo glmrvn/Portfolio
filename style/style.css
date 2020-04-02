@@ -39,7 +39,7 @@ a:hover { color:black; }
     justify-content: space-between;
     margin-top: 24px;
 }
-.back { padding-left: 24px; position: fixed; top: 24px; }
+
 .name { padding-left: 24px; }
 .menu-links, .title-links a { margin-right: 16px; }
 .top a, .bottom-menu a { padding: 8px; }
@@ -62,6 +62,8 @@ a:hover { color:black; }
     margin-top: 0px;
     padding-bottom: 8px;
 }
+
+.back { padding-left: 24px; position: fixed; top: 24px; }
 
 /* Cases */
 #cases {
@@ -108,11 +110,15 @@ a:hover { color:black; }
 
 /* Bottom menu */
 .bottom-menu {
-    border-top: 1px solid #EBEBEB;
-    padding: 20px 0 20px 0;
+    border-top: 1px solid #f6f6f6;
+    padding: 12px 0 12px 0;
     text-align: center;
     position: fixed;
     bottom: 0;
     width: 100%;
     background-color: white;
+}
+
+.bottom-menu a {
+    font-size: 16px;
 }
