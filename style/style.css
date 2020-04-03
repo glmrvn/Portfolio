@@ -63,7 +63,7 @@ a:hover { color:black; }
     padding-bottom: 8px;
 }
 
-.back { padding-left: 24px; position: fixed; top: 24px; }
+.back { padding-left: 24px; position: fixed; top: 24px; color: black; }
 
 /* Contacts block */
 .contacts { 
@@ -80,7 +80,7 @@ a:hover { color:black; }
 /* Bottom menu */
 .bottom-menu {
     border-top: 1px solid #f6f6f6;
-    padding: 12px 0 12px 0;
+    padding: 12px 0 16px 0;
     text-align: center;
     position: fixed;
     bottom: 0;

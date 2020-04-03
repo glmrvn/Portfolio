@@ -1,7 +1,7 @@
 /* Mobile styles*/
 @media screen and (max-width: 414px) {
     body { font-size: 16px; }
-    .about { width: 100%; margin-top: 80px; }
+    .about { width: 100%; margin-top: 120px; }
     p { line-height: 20px; }
     h1 { width:100%; font-size: 24px; }
     .wrap { width: 90%; margin: 0 auto; }
