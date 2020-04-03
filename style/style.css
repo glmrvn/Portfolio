@@ -42,7 +42,7 @@ a:hover { color:black; }
 
 .name { padding-left: 24px; }
 .menu-links, .title-links a { margin-right: 16px; }
-.top a, .bottom-menu a { padding: 8px; }
+.top a, .bottom-menu a, .bottom-menu-exp a { padding: 8px; }
 
 /* About */
 .about {
@@ -88,6 +88,12 @@ a:hover { color:black; }
     background-color: white;
 }
 
-.bottom-menu a {
+.bottom-menu-exp {
+    border-top: 1px solid #f6f6f6;
+    padding: 12px 0 16px 0;
+    text-align: center;
+}
+
+.bottom-menu a, .bottom-menu-exp a {
     font-size: 16px;
 }
