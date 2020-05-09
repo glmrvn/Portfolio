@@ -58,24 +58,20 @@ a:hover { color:black; }
 .work-case img { width: 940px; margin-top: 24px; }
 .last-img { padding-bottom: 100px; }
 
+.work-case a {
+    margin-bottom: 24px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.work-case a:last-child { margin-bottom: 140px; }
+.work-case a:last-child:hover { color: #aaa; }
 .date {
     margin-top: 0px;
     padding-bottom: 8px;
 }
 
 .back { padding-left: 24px; position: fixed; top: 24px; color: black; }
-
-/* Contacts block */
-.contacts { 
-    margin-top: 300px;
-    margin-bottom: 300px;
-}
-.contacts a { color: #F14900; }
-
-.contacts a:hover {
-    text-decoration: underline;
-    opacity: 0.7;
-}
 
 /* Bottom menu */
 .bottom-menu {
