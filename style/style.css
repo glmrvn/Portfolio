@@ -28,7 +28,6 @@ a {
     transition: .2s;
 }
 
-
 a:hover { color:black; }
 
 .black-text { color: black; }
@@ -42,7 +41,7 @@ a:hover { color:black; }
 
 .name { padding-left: 24px; }
 .menu-links, .title-links a { margin-right: 16px; }
-.top a, .bottom-menu a, .bottom-menu-exp a { padding: 8px; }
+.top a, #bottom-menu a, .bottom-menu-exp a { padding: 8px; }
 
 /* About */
 .about {
@@ -51,30 +50,27 @@ a:hover { color:black; }
 }
 
 /* Work expirience */
+.back { padding-left: 24px; position: fixed; top: 24px; color: black; }
+
 .work-case { margin-top: 120px; }
 
 .work-title { margin-bottom: 4px; }
 
+.date { margin-top: 0px; padding-bottom: 8px; }
+
 .work-case img { width: 940px; margin-top: 24px; }
 .last-img { padding-bottom: 100px; }
 
-.bottom-links {
+.bottom-links a {
     margin-bottom: 24px;
     display: block;
     width: 100%;
     text-align: center;
 }
-.bottom-links:last-child { margin-bottom: 140px; }
-.bottom-links:last-child:hover { color: #aaa; }
-.date {
-    margin-top: 0px;
-    padding-bottom: 8px;
-}
-
-.back { padding-left: 24px; position: fixed; top: 24px; color: black; }
+.bottom-links a:last-child { margin-bottom: 140px; }
 
 /* Bottom menu */
-.bottom-menu {
+#bottom-menu {
     border-top: 1px solid #f6f6f6;
     padding: 12px 0 16px 0;
     text-align: center;
@@ -84,12 +80,7 @@ a:hover { color:black; }
     background-color: white;
 }
 
-.bottom-menu-exp {
-    border-top: 1px solid #f6f6f6;
-    padding: 12px 0 16px 0;
-    text-align: center;
-}
+#bottom-menu a { font-size: 16px; }
 
-.bottom-menu a, .bottom-menu-exp a {
-    font-size: 16px;
-}
+.link:hover { color:black; }
+.link {transition: 0.5s;}
