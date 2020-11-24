@@ -84,3 +84,16 @@ a:hover { color:black; }
 
 .link:hover { color:black !important; }
 .link { transition: 0.5s; }
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    body { background: black; }
+    .black-text, .name { color: white; }
+    a:hover { color:white; }
+    #bottom-menu { background-color: black; border-top: 1px solid #222; }
+    .back { color: white; }
+    .link:hover { color:white !important; }
+    p, a, h1 { color: #888; }
+}
+
+/* @media (prefers-color-scheme: light) { body { background: white; } } */
