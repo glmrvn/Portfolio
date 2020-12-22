@@ -80,10 +80,10 @@ a:hover { color:black; }
     background-color: white;
 }
 
-#bottom-menu a { font-size: 16px; }
+#bottom-menu a { font-size: 16px; color: black; opacity: 0.35; }
 
-.link:hover { color:black !important; }
-.link { transition: 0.5s; }
+.link:hover { opacity: 1 !important; }
+.link { transition: 0.3s; }
 
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
@@ -91,6 +91,7 @@ a:hover { color:black; }
     .black-text, .name { color: white; }
     a:hover { color:white; }
     #bottom-menu { background-color: black; border-top: 1px solid #222; }
+    #bottom-menu a { color: white; opacity: 0.45;}
     .back { color: white; }
     .link:hover { color:white !important; }
     p, a, h1 { color: #888; }
