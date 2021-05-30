@@ -31,6 +31,7 @@ a {
 a:hover { color:black; }
 
 .black-text { color: black; }
+a.black-text:hover { text-decoration: underline; }
 
 /* Menu */
 .top {
@@ -45,7 +46,7 @@ a:hover { color:black; }
 
 /* About */
 .about {
-    margin-top: 240px;
+    margin-top: 200px;
     width: 720px;
 }
 
