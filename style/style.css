@@ -15,6 +15,11 @@ body {
     margin: 0 auto;
 }
 
+.wrap-twitter {
+    width: 700px;
+    margin: 0 auto;
+}
+
 /* Text and link styles */
 p, a, h1 { color: #aaa; }
 
@@ -85,17 +90,3 @@ a.black-text:hover { text-decoration: underline; }
 
 .link:hover { opacity: 1 !important; }
 .link { transition: 0.3s; }
-
-/* Dark mode */
-@media (prefers-color-scheme: dark) {
-    body { background: black; }
-    .black-text, .name { color: white; }
-    a:hover { color:white; }
-    #bottom-menu { background-color: black; border-top: 1px solid #222; }
-    #bottom-menu a { color: white; opacity: 0.45;}
-    .back { color: white; }
-    .link:hover { color:white !important; }
-    p, a, h1 { color: #888; }
-}
-
-/* @media (prefers-color-scheme: light) { body { background: white; } } */
