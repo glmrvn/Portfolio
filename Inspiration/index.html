@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/mobile.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../scripts/script.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -22,14 +23,36 @@
 
 <body>
     <a href="../" class="back">←</a>
-
-    <div class="wrap-twitter">
+      
+      <div class="wrap-twitter">
         <div class="about mob-margin"><h1><span class="black-text">Inspiration</span></br>Look, Listen, Read</h1></div>
         <div class="work-case"></div>
         <a class="twitter-timeline" data-chrome="noheader nofooter noborders noscrollbar" href="https://twitter.com/glmrvn?ref_src=twsrc%5Etfw">Tweets by glmrvn</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         <div class="work-case"></div>
-    </div>
-
+      </div>
+      
+      <script>
+        if (typeof twttr != "undefined") twttr.widgets.load();
+      
+        jQuery('.wrap-twitter').delegate('.twitter-timeline','DOMSubtreeModified propertychange', function() {
+          //function call to override the base twitter styles
+          customizeTweetMedia();
+        });
+      
+        var customizeTweetMedia = function() {
+          jQuery('.wrap-twitter').find('.twitter-timeline').contents().find('.timeline-Tweet-text').css('font-family', 'Arial');
+          jQuery('.wrap-twitter').find('.twitter-timeline').contents().find('.Icon--twitter').remove();
+          jQuery('.wrap-twitter').find('.twitter-timeline').contents().find('.timeline-Tweet-metadata').css('display', 'none');
+          jQuery('.wrap-twitter').find('.twitter-timeline').contents().find('.timeline-Tweet-actions').css('display', 'none');
+          jQuery('.wrap-twitter').find('.twitter-timeline').contents().find('.timeline-Tweet-retweetCredit').css('display', 'none');
+          jQuery('.wrap-twitter').find('.twitter-timeline').contents().find('.timeline-Tweet:hover').css('background-color', '#ffffff');
+      
+          //also call the function on dynamic updates in addition to page load
+          jQuery('.twitter-block').find('.twitter-timeline').contents().find('.timeline-TweetList').bind('DOMSubtreeModified propertychange', function() {
+            customizeTweetMedia(this);
+          });
+        }
+      </script>
 
     <!-- Bottom navigation -->
     <!-- <div class="bottom-links">
