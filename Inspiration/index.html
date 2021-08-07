@@ -45,7 +45,8 @@
           jQuery('.wrap-twitter').find('.twitter-timeline').contents().find('.timeline-Tweet-metadata').css('display', 'none');
           jQuery('.wrap-twitter').find('.twitter-timeline').contents().find('.timeline-Tweet-actions').css('display', 'none');
           jQuery('.wrap-twitter').find('.twitter-timeline').contents().find('.timeline-Tweet-retweetCredit').css('display', 'none');
-          jQuery('.wrap-twitter').find('.twitter-timeline').contents().find('.timeline-Tweet:hover').css('background-color', '#ffffff');
+          jQuery('.wrap-twitter').find('.twitter-timeline').contents().find('.timeline-Tweet').css('border-radius', '16px');
+          jQuery('.wrap-twitter').find('.twitter-timeline').contents().find('.timeline-Tweet').css('padding', '16px');
       
           //also call the function on dynamic updates in addition to page load
           jQuery('.twitter-block').find('.twitter-timeline').contents().find('.timeline-TweetList').bind('DOMSubtreeModified propertychange', function() {
