@@ -47,11 +47,6 @@
           jQuery('.wrap-twitter').find('.twitter-timeline').contents().find('.timeline-Tweet-retweetCredit').css('display', 'none');
           jQuery('.wrap-twitter').find('.twitter-timeline').contents().find('.timeline-Tweet').css('border-radius', '16px');
           jQuery('.wrap-twitter').find('.twitter-timeline').contents().find('.timeline-Tweet').css('padding', '16px');
-      
-          //also call the function on dynamic updates in addition to page load
-          jQuery('.wrap-twitter').find('.twitter-timeline').contents().find('.timeline-TweetList').bind('DOMSubtreeModified propertychange', function() {
-            customizeTweetMedia(this);
-          });
         }
       </script>
 
