@@ -49,7 +49,7 @@
           jQuery('.wrap-twitter').find('.twitter-timeline').contents().find('.timeline-Tweet').css('padding', '16px');
       
           //also call the function on dynamic updates in addition to page load
-          jQuery('.twitter-block').find('.twitter-timeline').contents().find('.timeline-TweetList').bind('DOMSubtreeModified propertychange', function() {
+          jQuery('.wrap-twitter').find('.twitter-timeline').contents().find('.timeline-TweetList').bind('DOMSubtreeModified propertychange', function() {
             customizeTweetMedia(this);
           });
         }
