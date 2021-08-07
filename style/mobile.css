@@ -5,7 +5,7 @@
     p { line-height: 20px; }
     h1 { width:100%; font-size: 24px; }
     .wrap { width: 90%; margin: 0 auto; }
-    .wrap-twitter { width: 100%; margin: 0 auto; }
+    .wrap-twitter { width: 96%; margin: 0 auto; }
     .top a { padding: 4px; }
     #bottom-menu { padding: 8px 0 12px 0; }
     #bottom-menu a { font-size: 14px; padding: 0 4px; }
@@ -15,5 +15,5 @@
     .work-case img { width: 100%; margin-top: 0; }
     .work-case { margin-top: 80px; }
     .date { padding-bottom: 0; }
-    .mob-margin { padding-left: 24px; } 
+    .mob-margin { padding-left: 16px; } 
 }
