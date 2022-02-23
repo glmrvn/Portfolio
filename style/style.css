@@ -55,6 +55,7 @@ a.black-text:hover { text-decoration: underline; }
     margin-top: 200px;
     width: 720px;
 }
+.about a { margin-right: 32px; }
 
 /* Work expirience */
 .back { padding-left: 24px; position: fixed; top: 24px; color: black; }
