@@ -110,9 +110,12 @@ a.black-text:hover { text-decoration: underline; }
     min-height: 404px;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.07);
     border-radius: 16px;
+    transition: .3s;
 }
 
+.case:hover { box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.2); }
+
 .case img { width: 460px; border-radius: 16px 16px 0px 0px; margin-bottom: 24px; }
-.case img:hover { opacity: 0.9; transition: 300ms; }
+.case img:hover { opacity: 0.9; transition: .3s; }
 
 .case p { margin: 8px 32px; }

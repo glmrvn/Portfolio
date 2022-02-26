@@ -8,7 +8,7 @@
     .back { color: white; }
     .link:hover { color:white !important; }
     p, a, h1 { color: #888; }
-    .case { background-color: #222; }
+    .case { background-color: #1a1a1a; }
 }
 
 /* @media (prefers-color-scheme: light) { body { background: white; } } */
