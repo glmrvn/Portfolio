@@ -22,13 +22,57 @@
 </head>
 
 <body>
+    <style>
+        @media (prefers-color-scheme: light) {
+          body { background: black; }
+          .black-text, .name, .back, a:hover { color: white; }
+          #bottom-menu { background-color: black; border-top: 1px solid #222; }
+          #bottom-menu a { color: white; opacity: 0.45;}
+        }
+      </style>
+
     <a href="../" class="back">←</a>
 
     <div class="wrap">
         <div class="about">
             <p>March, 2018</p>
             <h1><span class="black-text">How we create tools at the Yandex Maps. Cartograph</h1>
+            <p class="black-text">We all use Figma or Sketch for the interface, but have you ever wondered what kind of tool you need to create maps? Creating maps is a complicated process that requires special tools.  I would like to share principles and tips for designing complex tools, as we do in Yandex Maps. </p>
+            </br>
+            <p class="case-text">What I've learned? in this project</p>
+            <p class="black-text">— Keep mockups and descriptions together. It is a mistake to keep the layout and description in different places. Anyone with access to your mockups needs to figure out how your interface works.</p>
+            <img src="../img/cartograph/cartograph_case_1.jpg" alt="">
+
+            <p class="black-text">— Coordinate guidelines with development. It is important that design and development speak the same language. Use a common naming for text styles and colors.</p>
+            <img src="../img/cartograph/cartograph_case_2.jpg" alt="">
+
+            <p class="black-text">— Use numbers for sections in the description. It will be easy for you to refer to sections. A clear structure will help keep everything in its place and avoid chaos.</p>
+            <img src="../img/cartograph/cartograph_case_3.jpg" alt="">
+            <img src="../img/cartograph/cartograph_case_3_1.jpg" alt="">
+
+            <p class="black-text">— Use the semantic palette. This will greatly simplify the work for you and the developers, especially if you provide support for multiple themes for your interface.</p>
+            <img src="../img/cartograph/cartograph_case_4.jpg" alt="">
+
+            <p class="black-text">— Draw all states. It is very important that the design contains real data, with all possible variations. Don't use Lorem texts.</p>
+            <img src="../img/cartograph/cartograph_case_5.jpg" alt="">
+            <img src="../img/cartograph/cartograph_case_5_1.jpg" alt="">
+
+            <p class="black-text">— Animations can give the impression of a slow interface. Use them very carefully.</p>
+            <img src="../img/cartograph/cartograph_case_6.jpg" alt="">
+
+            <p class="black-text">— Enjoy working with empty states, 404s and other errors.</p>
+            <img class="last-img" src="../img/cartograph/cartograph_case_7.jpg" alt="">
         </div>
 
+    </div>
+
+    <!-- Footer -->
+    <div id="bottom-menu">
+        <a href="https://dribbble.com/glmrvn" class="link" target="_blank">dribbble</a>
+        <a href="https://github.com/glmrvn" class="link" target="_blank">github</a>
+        <a href="https://www.figma.com/@903146" class="link" target="_blank">figma</a>
+        <a href="https://www.linkedin.com/in/alex-dyakov" class="link" target="_blank">in</a>
+        <a href="https://medium.com/@glmrvn" class="link" target="_blank">medium</a>
+        <a href="https://www.facebook.com/glmrvn" class="link" target="_blank">fb</a>
     </div>
 </body>
