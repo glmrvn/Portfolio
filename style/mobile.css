@@ -8,6 +8,8 @@
     .wrap { width: 90%; margin: 0 auto; }
     .wrap-twitter { width: 96%; margin: 0 auto; }
     .wrap-text { width: 100%; margin: 0 auto; }
+    center { width: 100%; }
+    video {width: 100%;}
     .top a { padding: 4px; }
     #bottom-menu { padding: 8px 0 12px 0; }
     #bottom-menu a { font-size: 14px; padding: 0 4px; }
