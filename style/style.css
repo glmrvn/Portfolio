@@ -43,7 +43,7 @@ a {
 a:hover { color:black; }
 
 .black-text { color: black; }
-a.black-text:hover { text-decoration: underline; }
+a.black-text:hover { text-decoration: underline; text-decoration-thickness: from-font; }
 
 .question {
     font-size: 24px;
