@@ -64,7 +64,7 @@ a.black-text:hover { text-decoration: underline; text-decoration-thickness: from
 
 /* About */
 .about {
-    margin-top: 200px;
+    margin-top: 180px;
     width: 680px;
 }
 .section a { margin-right: 32px; }
