@@ -31,7 +31,7 @@ p, a, h1 { color: #aaa; }
 
 h1 {
     font-size: 64px;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: -0.02em;
     margin-block-end: 0.2em;
 }
@@ -65,7 +65,7 @@ a.black-text:hover { text-decoration: underline; text-decoration-thickness: from
 /* About */
 .about {
     margin-top: 180px;
-    width: 680px;
+    width: 940px;
 }
 .section a { margin-right: 32px; }
 
@@ -80,6 +80,7 @@ a.black-text:hover { text-decoration: underline; text-decoration-thickness: from
 
 video { margin-top: 20px; }
 .about img, .work-case img { width: 940px; margin-top: 20px; }
+.wrap img { width: 940px; }
 .wrap-text img { width: 840px; margin: 20px 0px; }
 .last-img { padding-bottom: 100px; }
 
@@ -138,3 +139,23 @@ video { margin-top: 20px; }
 .case img:hover { opacity: 0.9; transition: .3s; }
 
 .case p { margin: 8px 32px; }
+
+/* Table */
+.column {
+    float: left;
+    font-size: 16px;
+    margin: 0 0 160px 0;
+    line-height: 24px;
+  }
+
+.first, .third, .fifth { width: 8%; }
+.second { width: 40%; }
+.sixth { width: 9%;}
+.fourth { width: 27%; }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
