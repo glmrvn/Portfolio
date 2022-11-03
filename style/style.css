@@ -144,13 +144,13 @@ video { margin-top: 20px; }
 .column {
     float: left;
     font-size: 16px;
-    margin: 0 0 160px 0;
+    margin: 0 0 120px 0;
     line-height: 24px;
   }
 
 .first, .third, .fifth { width: 8%; }
-.second { width: 40%; }
-.sixth { width: 9%;}
+.second { width: 43%; }
+.sixth { width: 6%;}
 .fourth { width: 27%; }
 
   /* Clear floats after the columns */
