@@ -19,7 +19,7 @@ body {
 .text-container {
     position: absolute;
     width: 940px;
-    top: 125%;
+    top: 100%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
