@@ -16,6 +16,15 @@ body {
     margin: 0 auto;
 }
 
+.text-container {
+    position: absolute;
+    width: 940px;
+    top: 100%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
 .wrap-twitter {
     width: 700px;
     margin: 0 auto;
@@ -77,7 +86,7 @@ a.black-text:hover { text-decoration: underline; text-decoration-thickness: from
 
 .date { margin-top: 0px; padding-bottom: 8px; }
 
-video { margin-top: 20px; }
+/* video { margin-top: 20px; } */
 .about img, .work-case img { width: 940px; margin-top: 20px; }
 .wrap img { width: 940px; }
 .wrap-text img { width: 840px; margin: 20px 0px; }
@@ -154,6 +163,7 @@ video { margin-top: 20px; }
 
 .thirty { width: 30%; }
 .twenty { width: 20%; }
+.seventy { width: 57%; }
 
   /* Clear floats after the columns */
 .row:after {
@@ -161,3 +171,25 @@ content: "";
 display: table;
 clear: both;
 }
+
+#myVideo {
+    transition: 1s;
+    transition-timing-function: ease-in-out;
+    background-position: cover; object-fit: cover; position: fixed; z-index: -100; opacity: 0.2;
+    left: 0%;
+    top: 0%;
+    border-radius: 0%;
+}
+
+.centerstage {
+    opacity: 0.8 !important;
+    background-position: cover;
+    width: 40%;
+    left: 30% !important;
+    top: 10% !important;
+    border-radius: 10% !important;
+    position: absolute;
+}
+
+#placeholder { height: 100vh; }
+

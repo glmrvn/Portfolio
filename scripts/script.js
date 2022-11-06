@@ -4,3 +4,14 @@ function changeOpacity(value) {
     link[i].style.opacity = value;
   }
 }
+
+window.onscroll = function() {
+  var video = document.getElementById('myVideo');
+  if ( window.pageYOffset > 480 ) {
+    video.classList.add("centerstage");
+    document.querySelector('video').playbackRate = 1;
+  } else {
+    video.classList.remove("centerstage");
+    document.querySelector('video').playbackRate = 1;
+  }
+}
