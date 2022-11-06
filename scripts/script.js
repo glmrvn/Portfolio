@@ -7,11 +7,12 @@ function changeOpacity(value) {
 
 window.onscroll = function() {
   var video = document.getElementById('myVideo');
-  if ( window.pageYOffset > 480 ) {
+  if ( window.pageYOffset > 800 ) {
     video.classList.add("centerstage");
-    document.querySelector('video').playbackRate = 0.1;
+    // document.querySelector('video').playbackRate = 0.1;
   } else {
     video.classList.remove("centerstage");
-    document.querySelector('video').playbackRate = 1;
+    // document.querySelector('video').playbackRate = 0.1;
   }
+  
 }

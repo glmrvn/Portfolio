@@ -19,7 +19,7 @@ body {
 .text-container {
     position: absolute;
     width: 940px;
-    top: 100%;
+    top: 125%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
@@ -175,7 +175,7 @@ clear: both;
 #myVideo {
     transition: 1s;
     transition-timing-function: ease-in-out;
-    background-position: cover; object-fit: cover; position: fixed; z-index: -100; opacity: 0.2;
+    background-position: cover; object-fit: cover; position: fixed; z-index: -100; opacity: 0.15;
     left: 0%;
     top: 0%;
     border-radius: 0%;
@@ -192,4 +192,5 @@ clear: both;
 }
 
 #placeholder { height: 100vh; }
+.name { height: 50vh; }
 
