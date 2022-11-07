@@ -201,7 +201,7 @@ clear: both;
     margin-right: -50%;
     transform: translate(-50%, -50%);
 }
-#password a { text-align: center;}
+#password a { text-align: center; margin-left: 8px;}
 #password input {
     font-size: 14px;
     padding: 12px;
