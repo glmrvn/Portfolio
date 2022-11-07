@@ -194,3 +194,19 @@ clear: both;
 #placeholder { height: 100vh; }
 .name { height: 50vh; }
 
+#password { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+#password a { text-align: center;}
+#password input {
+    font-size: 14px;
+    padding: 12px;
+    background-color: #111;
+    border-radius: 8px;
+    border: none;
+    color: #FFF;
+}
