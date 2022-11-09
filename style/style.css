@@ -16,14 +16,15 @@ body {
     margin: 0 auto;
 }
 
-.text-container {
-    position: absolute;
+#text-container {
     width: 940px;
-    top: 100%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
+    top: 50%;
+    margin: 0 auto;
+    opacity: 1;
+    transition: 0.5s;
 }
+
+.text-container-animation { opacity: 0 !important; }
 
 .wrap-twitter {
     width: 700px;
@@ -31,6 +32,7 @@ body {
     overflow-x: hidden;
 }
 
+#placeholder { min-height: 125vh; }
 
 .wrap-text { width: 720px; }
 
@@ -165,14 +167,14 @@ a.black-text:hover { text-decoration: underline; text-decoration-thickness: from
 .twenty { width: 20%; }
 .seventy { width: 57%; }
 
-  /* Clear floats after the columns */
+/* Clear floats after the columns */
 .row:after {
 content: "";
 display: table;
 clear: both;
 }
 
-#myVideo {
+#my-video {
     transition: 1s;
     transition-timing-function: ease-in-out;
     background-position: cover; object-fit: cover; position: fixed; z-index: -100; opacity: 0.15;
@@ -181,8 +183,8 @@ clear: both;
     border-radius: 0%;
 }
 
-.centerstage {
-    opacity: 0.8 !important;
+.my-video-animation {
+    opacity: 0.9 !important;
     background-position: cover;
     width: 40%;
     left: 30% !important;
@@ -191,7 +193,6 @@ clear: both;
     position: absolute;
 }
 
-#placeholder { height: 100vh; }
 .name { height: 50vh; }
 
 #password { 

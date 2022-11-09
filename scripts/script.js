@@ -6,12 +6,15 @@ function changeOpacity(value) {
 }
 
 window.onscroll = function() {
-  var video = document.getElementById('myVideo');
-  if ( window.pageYOffset > 500 ) {
-    video.classList.add("centerstage");
+  var video = document.getElementById('my-video');
+  var header = document.getElementById('text-container');
+  if ( window.pageYOffset > 800 ) {
+    video.classList.add("my-video-animation");
+    header.classList.add("text-container-animation");
     document.querySelector('video').playbackRate = 0.1;
   } else {
-    video.classList.remove("centerstage");
+    video.classList.remove("my-video-animation");
+    header.classList.remove("text-container-animation");
     document.querySelector('video').playbackRate = 1;
   }
   
