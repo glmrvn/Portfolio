@@ -8,7 +8,7 @@ function changeOpacity(value) {
 window.onscroll = function() {
   var video = document.getElementById('my-video');
   var header = document.getElementById('text-container');
-  if ( window.pageYOffset > 800 ) {
+  if ( window.pageYOffset > 640 ) {
     video.classList.add("my-video-animation");
     header.classList.add("text-container-animation");
     document.querySelector('video').playbackRate = 0.1;
