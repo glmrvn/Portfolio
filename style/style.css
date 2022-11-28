@@ -177,7 +177,7 @@ clear: both;
 #my-video {
     transition: 1s;
     transition-timing-function: ease-in-out;
-    background-position: cover; object-fit: cover; position: fixed; z-index: -100; opacity: 0.3;
+    background-position: cover; object-fit: cover; position: fixed; z-index: -100; opacity: 0.2;
     left: 0%;
     top: 0%;
     border-radius: 0%;
