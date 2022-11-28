@@ -5,17 +5,17 @@ function changeOpacity(value) {
   }
 }
 
-window.onscroll = function() {
-  var video = document.getElementById('my-video');
-  var header = document.getElementById('text-container');
-  if ( window.pageYOffset > 600 ) {
-    video.classList.add("my-video-animation");
-    header.classList.add("text-container-animation");
-    document.querySelector('video').playbackRate = 0.1;
-  } else {
-    video.classList.remove("my-video-animation");
-    header.classList.remove("text-container-animation");
-    document.querySelector('video').playbackRate = 1;
-  }
+// window.onscroll = function() {
+//   var video = document.getElementById('my-video');
+//   var header = document.getElementById('text-container');
+//   if ( window.pageYOffset > 600 ) {
+//     video.classList.add("my-video-animation");
+//     header.classList.add("text-container-animation");
+//     document.querySelector('video').playbackRate = 0.1;
+//   } else {
+//     video.classList.remove("my-video-animation");
+//     header.classList.remove("text-container-animation");
+//     document.querySelector('video').playbackRate = 1;
+//   }
   
-}
+// }
