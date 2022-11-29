@@ -89,7 +89,7 @@ a.black-text:hover { text-decoration: underline; text-decoration-thickness: from
 .date { margin-top: 0px; padding-bottom: 8px; }
 
 /* video { margin-top: 20px; } */
-.about img, .work-case img { width: 940px; margin-top: 20px; }
+.about img, .work-case img, .work-case video { width: 940px; margin-top: 20px; }
 .wrap img { width: 940px; }
 .wrap-text img { width: 840px; margin: 20px 0px; }
 .last-img { padding-bottom: 100px; }
