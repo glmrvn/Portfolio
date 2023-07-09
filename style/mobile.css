@@ -23,9 +23,9 @@
     .about img, .case img { width: 100%; margin-bottom: 16px; }
     .case p { margin: 8px 24px; }
     #list { width:100%; margin: 80px 0px;}
-    .row p { font-size: 14px; }
+    .row p { font-size: 14px; padding-right: 8px;}
     .my-video-animation { width: 100%; left: 0% !important; top: 20% !important; }
     .first, .third, .fourth, .fifth, #placeholder, #my-video { display: none; }
     .first, .fifth { width: 25%; }
-    .sixth { min-width: 20%; }
+    .sixth { min-width: 25%; }
 }
