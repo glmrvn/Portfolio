@@ -28,4 +28,5 @@
     .first, .third, .fourth, .fifth, #placeholder, #my-video { display: none; }
     .first, .fifth { width: 25%; }
     .sixth { min-width: 25%; }
+    #floating-button-cases { font-size: 14px; }
 }

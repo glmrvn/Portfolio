@@ -1,6 +1,7 @@
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
     body { background: black; }
+    #floating-button-cases { background: black; }
     .black-text, .name { color: white; }
     a:hover { color:white; }
     #bottom-menu { background-color: black; border-top: 1px solid #222; }

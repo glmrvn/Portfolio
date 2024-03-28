@@ -36,6 +36,23 @@ body {
 
 .wrap-text { width: 720px; }
 
+/* Floating button */
+#floating-button-cases {
+    opacity: 0;
+    padding: 12px 12px 12px 16px;
+    pointer-events: none;
+    background-color: white;
+    position: fixed;
+    bottom: 64px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    border-radius: 24px;
+}
+#floating-button-cases:hover { bottom: 66px; text-decoration: none; }
+
+#floating-button-cases.show { opacity: 1; pointer-events: auto; }
+
 /* Text and link styles */
 p, a, h1 { color: #aaa; }
 

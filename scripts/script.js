@@ -5,6 +5,21 @@ function changeOpacity(value) {
   }
 }
 
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  var button = document.getElementById("floating-button-cases");
+  
+  if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+    button.classList.add("show");
+  } else {
+    button.classList.remove("show");
+  }
+  
+  if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 160) {
+    button.classList.remove("show");
+  }
+}
+
 // window.onscroll = function() {
 //   var video = document.getElementById('my-video');
 //   var header = document.getElementById('text-container');
