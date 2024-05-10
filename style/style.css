@@ -167,6 +167,17 @@ a.black-text:hover { text-decoration: underline; text-decoration-thickness: from
 .case p { margin: 8px 32px; }
 
 /* Table */
+.column_new {
+    float: left;
+    font-size: 16px;
+    margin: 0 0 80px 0;
+    line-height: 24px;
+    display: flex;
+    width: 33%;
+    grid-gap: 32px;
+}
+.column_new:last-child { justify-content: flex-end; }
+
 .column {
     float: left;
     font-size: 16px;

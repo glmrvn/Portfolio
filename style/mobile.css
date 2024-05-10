@@ -1,5 +1,5 @@
 /* Mobile styles*/
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 720px) {
     body { font-size: 16px; }
     .about { width: 100%; margin-top: 120px; }
     p { line-height: 20px; }
@@ -28,5 +28,10 @@
     .first, .third, .fourth, .fifth, #placeholder, #my-video { display: none; }
     .first, .fifth { width: 25%; }
     .sixth { min-width: 25%; }
+
+    .column_new {width: 50%;}
+    .column_new p:first-child { display: none; }
+    .column_new:nth-child(2) { display: none; }
+
     #floating-button-cases { font-size: 14px; }
 }
