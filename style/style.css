@@ -174,7 +174,7 @@ a.black-text:hover { text-decoration: underline; text-decoration-thickness: from
     margin: 0 0 80px 0;
     line-height: 24px;
     display: flex;
-    width: 33%;
+    width: 50%;
     grid-gap: 32px;
 }
 .column_new:last-child { justify-content: flex-end; }

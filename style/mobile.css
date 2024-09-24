@@ -31,7 +31,7 @@
 
     .column_new {width: 50%;}
     .column_new p:first-child { display: none; }
-    .column_new:nth-child(2) { display: none; }
+    /* .column_new:nth-child(2) { display: none; } */
 
     #floating-button-cases { font-size: 14px; }
 }
