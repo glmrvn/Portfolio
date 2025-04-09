@@ -15,7 +15,7 @@ function scrollFunction() {
     button.classList.remove("show");
   }
   
-  if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 160) {
+  if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 500) {
     button.classList.remove("show");
   }
 }

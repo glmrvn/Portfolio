@@ -41,13 +41,15 @@ body {
     opacity: 0;
     padding: 12px 12px 12px 16px;
     pointer-events: none;
-    background-color: white;
+    background-color: rgba(255,255,255,0.8);
     position: fixed;
     bottom: 64px;
     left: 50%;
     transform: translateX(-50%);
     font-size: 16px;
     border-radius: 24px;
+    backdrop-filter: blur(4px);
+    border: 1px solid white;
 }
 #floating-button-cases:hover { bottom: 66px; text-decoration: none; }
 
