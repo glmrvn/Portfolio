@@ -1,98 +1,178 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="theme-dark">
 <head>
     <meta charset="UTF-8">
-    <title>Alex D'yakov |  Watch App</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="../style/darkmode.css">
-    <link rel="stylesheet" href="../style/mobile.css">
-    <script src="../scripts/script.js"></script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162849880-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-162849880-1');
-    </script>
-
+    <title>Alex Dyakov | Apple Watch App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../style/case.css">
 </head>
 
 <body>
-    <style>
-        @media (prefers-color-scheme: light) {
-          body { background: black; }
-          .black-text, .name, .back, a:hover { color: white; }
-          #bottom-menu { background-color: black; border-top: 1px solid #222; }
-          #bottom-menu a { color: white; opacity: 0.45;}
-        }
-      </style>
 
-    <!-- <a href="../Cases/" class="back">←</a> -->
-    <div style="width: 96%; margin: 0 auto;">
-        <div class="row">
-            <div class="column first"><p>Project</p></div>
-            <div class="column second black-text"><p class="black-text">Apple Watch App</br>Y02</p></div>
+<main>
+
+    <!-- Project meta -->
+    <section class="project-meta">
+        <dl class="project-meta__grid">
+            <div class="project-meta__item">
+                <dt>Project</dt>
+                <dd>Apple Watch App<br>Y02</dd>
+            </div>
     
-            <div class="column third"><p>Release</p></div>
-            <div class="column fourth"><p class="black-text">May, 2019</br>55.7558° N, 37.6173° E</p></div>
+            <div class="project-meta__item">
+                <dt>Release</dt>
+                <dd>May, 2019<br>55.7558° N, 37.6173° E</dd>
+            </div>
     
-            <div class="column fifth"><p>Platform</p></div>
-            <div class="column sixth black-text"><p class="black-text">Watch OS</p></div>
-        </div>    
-    </div>
+            <div class="project-meta__item">
+                <dt>Platform</dt>
+                <dd>watchOS</dd>
+            </div>
+        </dl>
+    </section>
 
-    <div class="wrap about">
-        <h1><span class="black-text"> Watch is the number one smart watch in the world that allows users to get relevant information. People use our mobile app to check the traffic situation and public transport. We decided that it was important for us to give our users all these features for  Watch too.</h1>
-        <h1><span class="black-text">Having a maps app is essential for convenience, time-saving, and safety.  In 2018 we started project from these key features:</h1>
-        <img src="../img/applewatch/watch_case_pic_1-min.jpg" alt="">
+    <!-- Case content -->
+    <section class="wrap">
 
-        <h1><span class="black-text">One of the most useful features of Yandex Maps is the ability to view the city from a bird's eye perspective.</h1>
-        <h1><span class="black-text">I had an idea to put small modules of all items on one screen. Viewing all the information is quite simple, just using the digital crown or scrolling with your finger.</h1>
-        <img src="../img/applewatch/watch_case_pic_2-min.jpg" alt="">
+        <p>
+             Watch is the most popular smartwatch in the world and allows users to get relevant information quickly.
+            People use our mobile app to check traffic conditions and public transport. We decided it was important
+            to bring these features to  Watch as well.
+        </p>
 
-        <h1><span class="black-text">Let's start in order from top to bottom. The first is the map module is simple but important. The magic of this solution is that I show the map on the main screen as a module. Of course, you can tap on each module and see detailed information.</h1>
-        <img src="../img/applewatch/watch_case_pic_3-min.jpg" alt="">
+        <p>
+            Having a maps app is essential for convenience, time saving, and safety.
+            In 2018 we started the project with a focus on several key features.
+        </p>
 
-        <h1><span class="black-text">Then comes the traffic module. To predict traffic, you can use the time travel feature. This is a good way to pick the right time to see when the roads are empty.</h1>
-        <img src="../img/applewatch/watch_case_pic_4-min.jpg" alt="">
+        <img
+            src="../img/applewatch/watch_case_pic_1-min.jpg"
+            alt="Apple Watch app overview screen"
+        >
 
-        <h1><span class="black-text">Our apps provide real-time transport information, including bus and metro timetables. This module provides real-time public transport information, including real-time bus and metro schedules.</h1>
-        <img src="../img/applewatch/watch_case_pic_5-min.jpg" alt="">
+        <p>
+            One of the most useful features of Yandex Maps is the ability to view the city from a bird’s-eye perspective.
+            I had an idea to place compact modules with different types of information on a single screen.
+            Navigation between them is done using the Digital Crown or finger scrolling.
+        </p>
 
-        <h1><span class="black-text">Weather module last. Our weather forecasting technology is one of the best. The weather affects, among other things, traffic jams and the comfort of waiting for public transport.</h1>
-        <img src="../img/applewatch/watch_case_pic_6-min.jpg" alt="">
+        <img
+            loading="lazy"
+            src="../img/applewatch/watch_case_pic_2-min.jpg"
+            alt="Modular layout of map features on Apple Watch"
+        >
 
-        <h1><span class="black-text">I had to create a prototype that you see below. The challenge was that it is impossible to test the prototype for the Apple Watch on the actual watch itself. The super-detailed prototype eliminated all questions about how the app functions.</h1>
-        <center><video autoplay loop muted id="watch_video" src="../img/applewatch/watch_prototype.mp4" alt=""></video></center>
+        <p>
+            Starting from the top, the first module is the map itself.
+            It is simple but critical. The main idea is to show the map directly on the main screen as a module.
+            Each module can be tapped to access detailed information.
+        </p>
 
-        <h1><span class="black-text">As a result, after release our application got into the selection of the best for  Watch OS 6 in 2019.</h1>
-        <img src="../img/applewatch/watch_case_pic_7-min.jpg" alt="" class="last-img">
-    </div>
+        <img
+            loading="lazy"
+            src="../img/applewatch/watch_case_pic_3-min.jpg"
+            alt="Map module displayed on the main Apple Watch screen"
+        >
 
-    <div style="width: 96%; margin: 0 auto;">
-        <div class="row">
-            <div class="column first"><p>Team</p></div>
-            <div class="column second black-text"><p class="black-text">Designer Alex Dyakov</br>Product Manager</br>Developer</p></div>
+        <p>
+            The next module shows traffic conditions. Traffic prediction is based on the time travel feature,
+            which helps users choose the best time to avoid congestion.
+        </p>
+
+        <img
+            loading="lazy"
+            src="../img/applewatch/watch_case_pic_4-min.jpg"
+            alt="Traffic prediction module on Apple Watch"
+        >
+
+        <p>
+            The app also provides real-time public transport information, including bus and metro schedules.
+            This module focuses on up-to-date transport data.
+        </p>
+
+        <img
+            loading="lazy"
+            src="../img/applewatch/watch_case_pic_5-min.jpg"
+            alt="Public transport timetable module on Apple Watch"
+        >
+
+        <p>
+            The final module is weather. Weather conditions influence traffic and the comfort of waiting
+            for public transport, so this information is an important part of the experience.
+        </p>
+
+        <img
+            loading="lazy"
+            src="../img/applewatch/watch_case_pic_6-min.jpg"
+            alt="Weather information module on Apple Watch"
+        >
+
+        <p>
+            To validate the concept, I created a detailed interactive prototype.
+            At that time, it was not possible to test prototypes directly on a physical Apple Watch.
+            The high-fidelity prototype helped answer all questions about how the app works.
+        </p>
+
+        <video
+            id="watch_video"
+            autoplay
+            loop
+            muted
+            playsinline
+            preload="metadata"
+        >
+            <source src="../img/applewatch/watch_prototype.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <p>
+            After release, the application was featured in the Best of watchOS 6 selection in 2019.
+        </p>
+
+        <img
+            src="../img/applewatch/watch_case_pic_7-min.jpg"
+            alt="Apple Watch app featured in Best of watchOS 6"
+            class="last-img"
+        >
+
+    </section>
+
+    <!-- Team & details -->
+    <section class="project-meta">
+        <dl class="project-meta__grid">
     
-            <div class="column third"><p>Type</p></div>
-            <div class="column fourth"><p class="black-text">New Apple Watch App</p></div>
+            <div class="project-meta__item">
+                <dt>Team</dt>
+                <dd>
+                    Designer — Alex Dyakov<br>
+                    Product Manager<br>
+                    Developer
+                </dd>
+            </div>
     
-            <div class="column fifth"><p>Used tools</p></div>
-            <div class="column sixth black-text"><p class="black-text">Sketch</br>Principle</p></div>
-        </div>
-    </div>
+            <div class="project-meta__item">
+                <dt>Type</dt>
+                <dd>New Apple Watch App</dd>
+            </div>
+    
+            <div class="project-meta__item">
+                <dt>Used tools</dt>
+                <dd>Sketch<br>Principle</dd>
+            </div>
+    
+        </dl>
+    </section>
 
-    <!-- Footer -->
-    <div id="bottom-menu">
-        <a href="https://dribbble.com/glmrvn" class="link" target="_blank">dribbble</a>
-        <a href="https://github.com/glmrvn" class="link" target="_blank">github</a>
-        <a href="https://www.figma.com/@glmrvn" class="link" target="_blank">figma</a>
-        <a href="https://www.linkedin.com/in/alex-dyakov" class="link" target="_blank">in</a>
-        <a href="https://medium.com/@glmrvn" class="link" target="_blank">medium</a>
-        <a href="https://www.facebook.com/glmrvn" class="link" target="_blank">fb</a>
-    </div>
+</main>
+
+<footer id="bottom-menu">
+    <a href="https://dribbble.com/glmrvn" target="_blank" rel="noopener noreferrer">dribbble</a>
+    <a href="https://github.com/glmrvn" target="_blank" rel="noopener noreferrer">github</a>
+    <a href="https://www.figma.com/@glmrvn" target="_blank" rel="noopener noreferrer">figma</a>
+    <a href="https://www.linkedin.com/in/alex-dyakov" target="_blank" rel="noopener noreferrer">in</a>
+    <a href="https://medium.com/@glmrvn" target="_blank" rel="noopener noreferrer">medium</a>
+    <a href="https://www.facebook.com/glmrvn" target="_blank" rel="noopener noreferrer">fb</a>
+</footer>
+
 </body>
+</html>
