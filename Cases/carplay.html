@@ -1,122 +1,251 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="theme-dark">
 <head>
     <meta charset="UTF-8">
-    <title>Alex D'yakov | CarPlay & AA</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="../style/darkmode.css">
-    <link rel="stylesheet" href="../style/mobile.css">
-    <script src="../scripts/script.js"></script>
+    <title>Alex Dyakov | CarPlay & Android Auto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162849880-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-162849880-1');
-    </script>
-
+    <link rel="stylesheet" href="../style/case.css">
 </head>
 
 <body>
-    <style>
-        @media (prefers-color-scheme: light) {
-          body { background: black; }
-          .black-text, .name, .back, a:hover { color: white; }
-          #bottom-menu { background-color: black; border-top: 1px solid #222; }
-          #bottom-menu a { color: white; opacity: 0.45;}
-        }
-      </style>
 
-    <!-- <a href="../Cases/" class="back">←</a> -->
-    <div style="width: 96%; margin: 0 auto;">
-        <div class="row">
-            <div class="column first"><p>Project</p></div>
-            <div class="column second black-text"><p class="black-text">CP & AA</br>Y05</p></div>
-    
-            <div class="column third"><p>Release</p></div>
-            <div class="column fourth"><p class="black-text">Aug, 2021</br>55.7558° N, 37.6173° E</p></div>
-    
-            <div class="column fifth"><p>Platform</p></div>
-            <div class="column sixth black-text"><p class="black-text">iOS</br>Android</p></div>
-        </div>    
-    </div>
+<main>
 
-    <div class="wrap about">
-        <h1><span class="black-text"> CarPlay and Android Auto are becoming increasingly popular, and most new cars support them. As a leading geo-application, Yandex is committed to staying at the forefront of innovation.</h1>
-        <h1><span class="black-text">Supporting CarPlay and Android Auto has been one of the most requested features by our users. By integrating these platforms, we aim to enhance the user experience and maintain our competitive edge in the market.</h1>
-        <img src="../img/carplay/carplay_case_pic_2-min.jpg" alt="">
-        <h1><span class="black-text">The key challenge was to create two apps (Maps and Navigator) on two platforms. As a result, our apps are at the ↑ top of stores, and we published 4 apps in 1 day.</h1>
-        <center><video autoplay loop muted width="940" src="../img/carplay/cp.mp4" alt=""></video></center>
-        
-        <h1><span class="black-text">I started with analytics and guides. New applications and young platforms are usually a problem.</h1>
-        <!-- <img src="../img/carplay/carplay_case_pic_4-min.jpg" alt=""> -->
-        <h1><span class="black-text">Also, if you're building something for cars, you need the right environment for testing first mockups.</h1>
-        <img src="../img/carplay/carplay_case_pic_5-min.jpg" alt="">
+    <!-- Project meta -->
+    <section class="project-meta">
+        <dl class="project-meta__grid">
+            <div class="project-meta__item">
+                <dt>Project</dt>
+                <dd>CP & AA<br>YM05</dd>
+            </div>
 
-        <h1><span class="black-text">The next step was the app architecture. The prototype showing starting screen and the freedrive mode.</h1>
-        <center><video autoplay loop muted width="940" src="../img/carplay/cp_freedrive.mp4" alt=""></video></center>
+            <div class="project-meta__item">
+                <dt>Release</dt>
+                <dd>Aug, 2021<br>55.7558° N, 37.6173° E</dd>
+            </div>
 
-        <h1><span class="black-text">When the user starts moving, we hide the top bar and controls, which you can easily bring back if you touch the display or use the controls.</h1>
-        <img src="../img/carplay/carplay_case_pic_7-min.jpg" alt="">
+            <div class="project-meta__item">
+                <dt>Platform</dt>
+                <dd>iOS<br>Android</dd>
+            </div>
+        </dl>
+    </section>
 
-        <h1><span class="black-text">The same on the driving screen:</h1>
-        <img src="../img/carplay/carplay_case_pic_15-min.jpg" alt="">
+    <!-- Case content -->
+    <section class="wrap">
 
-        <h1><span class="black-text">The key feature of CarPlay for us was the Dashboard. When you get into your car, you will immediately see Yandex Maps, it will start automatically.</h1>
-        <img src="../img/carplay/carplay_case_pic_8-min.jpg" alt="">
+        <p>
+             CarPlay and Android Auto are becoming increasingly popular, and most new cars support them.
+            As a leading geo-application, Yandex is committed to staying at the forefront of innovation.
+        </p>
 
-        <h1><span class="black-text">Driving mode:</h1>
-        <img src="../img/carplay/carplay_case_pic_18-min.jpg" alt="">
-        <img src="../img/carplay/carplay_case_pic_10-min.jpg" alt="">
+        <p>
+            Supporting CarPlay and Android Auto has been one of the most requested features by our users.
+            By integrating these platforms, we aim to enhance the user experience and maintain our competitive edge in the market.
+        </p>
 
-        <h1><span class="black-text">You can use your voice for searching places. After that, we show a map with the result on which you can select.</h1>
-        <img src="../img/carplay/carplay_case_pic_12-min.jpg" alt="">
+        <img
+            src="../img/carplay/carplay_case_pic_2-min.jpg"
+            alt="CarPlay main interface"
+            loading="lazy"
+        >
 
+        <p>
+            The key challenge was to create two apps (Maps and Navigator) on two platforms.
+            As a result, our apps are at the top of stores, and we published 4 apps in 1 day.
+        </p>
 
-        <h1><span class="black-text">Then once you have chosen a location we are ready to see the directions and start driving.</h1>
-        <img src="../img/carplay/carplay_case_pic_13-min.jpg" alt="">
+        <video
+            autoplay
+            loop
+            muted
+            playsinline
+            preload="metadata"
+        >
+            <source src="../img/carplay/cp.mp4" type="video/mp4">
+        </video>
 
-        <h1><span class="black-text">Driving mode.</h1>
-        <center><video autoplay loop muted width="940" src="../img/carplay/cp.mp4" alt=""></video></center>
+        <p>
+            I started with analytics and guides. New applications and young platforms are usually a problem.
+        </p>
 
-        <h1><span class="black-text"> Here you can see lane hints on the map, speed limits with camera alerts, the ETA overview that shows all your route status.</h1>
-        <img src="../img/carplay/carplay_case_pic_14-min.jpg" alt="">
+        <p>
+            Also, if you're building something for cars, you need the right environment for testing first mockups.
+        </p>
 
-        <h1><span class="black-text">We use contextual lane hints on the route from the mobile app, but we've simplified it and only show lanes without additional information.</h1>
-        <img src="../img/carplay/carplay_case_pic_16-min.jpg" alt="">
+        <img
+            src="../img/carplay/carplay_case_pic_5-min.jpg"
+            alt="Testing environment for CarPlay"
+            loading="lazy"
+        >
 
-        <h1><span class="black-text">A lot of testing and realese.</h1>
-        <img src="../img/carplay/carplay_case_pic_20-min.jpg" alt="">
-        <img src="../img/carplay/carplay_case_pic_22-min.jpg" alt="">
+        <p>
+            The next step was the app architecture. The prototype showing starting screen and the freedrive mode.
+        </p>
 
-        <h1><span class="black-text">As a result, our apps are at the ↑ top of stores, and we published 4 apps in 1 day ♥</h1>
-        <img src="../img/carplay/carplay_case_pic_21-min.jpg" alt="" class="last-img">
-    </div>
+        <video
+            autoplay
+            loop
+            muted
+            playsinline
+            preload="metadata"
+        >
+            <source src="../img/carplay/cp_freedrive.mp4" type="video/mp4">
+        </video>
 
-    <div style="width: 96%; margin: 0 auto;">
-        <div class="row">
-            <div class="column first"><p>Team</p></div>
-            <div class="column second black-text"><p class="black-text">Designer Alex Dyakov</br>Product Manager</br>A lot of Developers</p></div>
-    
-            <div class="column third"><p>Type</p></div>
-            <div class="column fourth"><p class="black-text">New App for CP&AA</p></div>
-    
-            <div class="column fifth"><p>Used tools</p></div>
-            <div class="column sixth black-text"><p class="black-text">Figma</br>Principle</p></div>
-        </div>
-    </div>
+        <p>
+            When the user starts moving, we hide the top bar and controls, which you can easily bring back if you touch the display or use the controls.
+        </p>
 
-    <!-- Footer -->
-    <div id="bottom-menu">
-        <a href="https://dribbble.com/glmrvn" class="link" target="_blank">dribbble</a>
-        <a href="https://github.com/glmrvn" class="link" target="_blank">github</a>
-        <a href="https://www.figma.com/@glmrvn" class="link" target="_blank">figma</a>
-        <a href="https://www.linkedin.com/in/alex-dyakov" class="link" target="_blank">in</a>
-        <a href="https://medium.com/@glmrvn" class="link" target="_blank">medium</a>
-        <a href="https://www.facebook.com/glmrvn" class="link" target="_blank">fb</a>
-    </div>
+        <img
+            src="../img/carplay/carplay_case_pic_7-min.jpg"
+            alt="Driving mode interface"
+            loading="lazy"
+        >
+
+        <p>
+            The same on the driving screen:
+        </p>
+
+        <img
+            src="../img/carplay/carplay_case_pic_15-min.jpg"
+            alt="Driving screen layout"
+            loading="lazy"
+        >
+
+        <p>
+            The key feature of CarPlay for us was the Dashboard.
+            When you get into your car, you will immediately see Yandex Maps, it will start automatically.
+        </p>
+
+        <img
+            src="../img/carplay/carplay_case_pic_8-min.jpg"
+            alt="CarPlay dashboard"
+            loading="lazy"
+        >
+
+        <p>
+            Driving mode:
+        </p>
+
+        <img
+            src="../img/carplay/carplay_case_pic_18-min.jpg"
+            alt="Driving mode overview"
+            loading="lazy"
+        >
+
+        <img
+            src="../img/carplay/carplay_case_pic_10-min.jpg"
+            alt="Navigation in driving mode"
+            loading="lazy"
+        >
+
+        <p>
+            You can use your voice for searching places. After that, we show a map with the result on which you can select.
+        </p>
+
+        <img
+            src="../img/carplay/carplay_case_pic_12-min.jpg"
+            alt="Voice search result"
+            loading="lazy"
+        >
+
+        <p>
+            Then once you have chosen a location we are ready to see the directions and start driving.
+        </p>
+
+        <img
+            src="../img/carplay/carplay_case_pic_13-min.jpg"
+            alt="Route overview"
+            loading="lazy"
+        >
+
+        <p>
+            Here you can see lane hints on the map, speed limits with camera alerts, the ETA overview that shows all your route status.
+        </p>
+
+        <img
+            src="../img/carplay/carplay_case_pic_14-min.jpg"
+            alt="Lane hints and ETA"
+            loading="lazy"
+        >
+
+        <p>
+            We use contextual lane hints on the route from the mobile app, but we've simplified it and only show lanes without additional information.
+        </p>
+
+        <img
+            src="../img/carplay/carplay_case_pic_16-min.jpg"
+            alt="Simplified lane hints"
+            loading="lazy"
+        >
+
+        <p>
+            A lot of testing and release.
+        </p>
+
+        <img
+            src="../img/carplay/carplay_case_pic_20-min.jpg"
+            alt="Testing phase"
+            loading="lazy"
+        >
+
+        <img
+            src="../img/carplay/carplay_case_pic_22-min.jpg"
+            alt="Release preparation"
+            loading="lazy"
+        >
+
+        <p>
+            As a result, our apps are at the top of stores, and we published 4 apps in 1 day.
+        </p>
+
+        <img
+            src="../img/carplay/carplay_case_pic_21-min.jpg"
+            alt="Final result"
+            class="last-img"
+            loading="lazy"
+        >
+
+    </section>
+
+    <!-- Team & details -->
+    <section class="project-meta">
+        <dl class="project-meta__grid">
+
+            <div class="project-meta__item">
+                <dt>Team</dt>
+                <dd>
+                    Designer — Alex Dyakov<br>
+                    Product Manager<br>
+                    Developers
+                </dd>
+            </div>
+
+            <div class="project-meta__item">
+                <dt>Type</dt>
+                <dd>New App for CarPlay & Android Auto</dd>
+            </div>
+
+            <div class="project-meta__item">
+                <dt>Used tools</dt>
+                <dd>Figma<br>Principle</dd>
+            </div>
+
+        </dl>
+    </section>
+
+</main>
+
+<footer id="bottom-menu">
+    <a href="https://dribbble.com/glmrvn" target="_blank" rel="noopener noreferrer">dribbble</a>
+    <a href="https://github.com/glmrvn" target="_blank" rel="noopener noreferrer">github</a>
+    <a href="https://www.figma.com/@glmrvn" target="_blank" rel="noopener noreferrer">figma</a>
+    <a href="https://www.linkedin.com/in/alex-dyakov" target="_blank" rel="noopener noreferrer">in</a>
+    <a href="https://medium.com/@glmrvn" target="_blank" rel="noopener noreferrer">medium</a>
+    <a href="https://www.facebook.com/glmrvn" target="_blank" rel="noopener noreferrer">fb</a>
+</footer>
+
 </body>
+</html>

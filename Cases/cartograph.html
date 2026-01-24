@@ -1,109 +1,229 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="theme-dark">
 <head>
     <meta charset="UTF-8">
-    <title>Alex D'yakov | Cartograph</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="../style/darkmode.css">
-    <link rel="stylesheet" href="../style/mobile.css">
-    <script src="../scripts/script.js"></script>
+    <title>Alex Dyakov | Cartograph</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162849880-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-162849880-1');
-    </script>
-
+    <link rel="stylesheet" href="../style/case.css">
 </head>
 
 <body>
-    <style>
-        @media (prefers-color-scheme: light) {
-          body { background: black; }
-          .black-text, .name, .back, a:hover { color: white; }
-          #bottom-menu { background-color: black; border-top: 1px solid #222; }
-          #bottom-menu a { color: white; opacity: 0.45;}
-        }
-      </style>
 
-    <!-- <a href="../Cases/" class="back">←</a> -->
-    <div style="width: 96%; margin: 0 auto;">
-        <div class="row">
-            <div class="column first"><p>Name</p></div>
-            <div class="column second black-text"><p class="black-text">Cartograph</br>Y01</p></div>
+<main>
 
-            <div class="column third"><p>Release</p></div>
-            <div class="column fourth"><p class="black-text">Mar, 2018</br>55.7558° N, 37.6173° E</p></div>
+    <!-- Project meta -->
+    <section class="project-meta">
+        <dl class="project-meta__grid">
+            <div class="project-meta__item">
+                <dt>Project</dt>
+                <dd>Cartograph<br>YM01</dd>
+            </div>
 
-            <div class="column fifth"><p>Platform</p></div>
-            <div class="column sixth black-text"><p class="black-text">Web</p></div>
-        </div>
-    </div>
+            <div class="project-meta__item">
+                <dt>Release</dt>
+                <dd>Mar, 2018<br>55.7558° N, 37.6173° E</dd>
+            </div>
 
-    <div class="wrap about">
-        <h1><span class="black-text">We all use Figma or Sketch for interface design, but have you ever wondered what tool you need to create maps?</h1>
-        <h1><span class="black-text">If you are a big company, such as Yandex, you should have great tools and invest in your processes. That's why we developed Cartograph in 2018. It is our internal tool for creating and publishing maps.</h1>
-        <h1><span class="black-text">Here is a sneak peek of my work and Cartograph interface.</h1>
-        <img src="../img/cartograph/cartograph_case_0.jpg" alt="">
+            <div class="project-meta__item">
+                <dt>Platform</dt>
+                <dd>Web</dd>
+            </div>
+        </dl>
+    </section>
 
-        <h1>↓ working with layers. <span class="black-text">each layer is a sheet of data to which a style is applied. You can edit individual layers as well as entire groups of layers.</h1>
-        <img src="../img/cartograph/cartograph_case_1.jpg" alt="">
+    <!-- Case content -->
+    <section class="wrap">
 
-        <h1>↓ layer settings. <span class="black-text">different types of data have their own settings.</h1>
-        <img src="../img/cartograph/cartograph_case_settings_1-min.jpeg" alt="">
-        <img src="../img/cartograph/cartograph_case_settings_2-min.jpeg" alt="">
+        <p>
+            We all use Figma or Sketch for interface design, but have you ever wondered what tool you need to create maps?
+        </p>
 
-        <h1>↓ zoom logic. <span class="black-text">for precise adjustment across zoom levels, breakpoints or smooth value transitions are used.</h1>
-        <img src="../img/cartograph/cartograph_case_5.jpg" alt="">
-        <img src="../img/cartograph/cartograph_case_3_1.jpg" alt="">
-        <center><video id="cartograph-video" autoplay loop muted src="../img/cartograph/cartograph_zoom.mp4" alt=""></video></center>
+        <p>
+            If you are a big company, such as Yandex, you should have great tools and invest in your processes.
+            That's why we developed Cartograph in 2018. It is our internal tool for creating and publishing maps.
+        </p>
 
-        <h1>↓ working with colors. <span class="black-text">the color picker supports all color schemes. styles can be saved and updated.</h1>
-        <img src="../img/cartograph/cartograph_case_2.jpg" alt="">
-        <img src="../img/cartograph/cartograph_case_color-min.jpeg" alt="">
+        <p>
+            Here is a sneak peek of my work and the Cartograph interface.
+        </p>
 
-        <h1>↓ settings. <span class="black-text">you can choose to display all types of data and customize Cartograph to your liking.</h1>
-        <img src="../img/cartograph/cartograph_case_3.jpg" alt="">
-        <img src="../img/cartograph/cartograph_case_3_2.jpg" alt="">
+        <img
+            src="../img/cartograph/cartograph_case_0.jpg"
+            alt="Cartograph main interface"
+            loading="lazy"
+        >
 
-        <h1>↓ json editor. <span class="black-text">you can write styles for the map using code if needed.</h1>
-        <img src="../img/cartograph/cartograph_case_5_1.jpg" alt="">
+        <p>
+            Working with layers. Each layer is a sheet of data to which a style is applied.
+            You can edit individual layers as well as entire groups of layers.
+        </p>
 
-        <h1>↓ working with branches. <span class="black-text">efficient branch management and release system like GitHub.</h1>
-        <img src="../img/cartograph/cartograph_case_6.jpg" alt="">
+        <img
+            src="../img/cartograph/cartograph_case_1.jpg"
+            alt="Working with layers in Cartograph"
+            loading="lazy"
+        >
 
-        <h1>↓ <span class="black-text">and some design fun</h1>
-        <img src="../img/cartograph/cartograph_case_7.jpg" alt="" class="last-img">
-        <h1><span class="black-text">↓ mocks</h1>
-    </div>
+        <p>
+            Layer settings. Different types of data have their own settings.
+        </p>
 
-    <center><video autoplay loop muted width="90%" src="../img/cartograph/cartograph.mp4" alt="" class="last-img"></video></center>
+        <img
+            src="../img/cartograph/cartograph_case_settings_1-min.jpeg"
+            alt="Layer settings panel"
+            loading="lazy"
+        >
 
-    <div style="width: 96%; margin: 0 auto;">
-        <div class="row">
-            <div class="column first"><p>Team</p></div>
-            <div class="column second black-text"><p class="black-text">Designer Alex Dyakov</br>Product Manager</br>2 Frontend & 2 Backend Developers</p></div>
-    
-            <div class="column third"><p>Type</p></div>
-            <div class="column fourth"><p class="black-text">New internal tool</p></div>
-    
-            <div class="column fifth"><p>Used tools</p></div>
-            <div class="column sixth black-text"><p class="black-text">Sketch</br>Principle</p></div>
-        </div>
-    </div>
+        <img
+            src="../img/cartograph/cartograph_case_settings_2-min.jpeg"
+            alt="Additional layer settings"
+            loading="lazy"
+        >
 
-    <!-- Footer -->
-    <div id="bottom-menu">
-        <a href="https://dribbble.com/glmrvn" class="link" target="_blank">dribbble</a>
-        <a href="https://github.com/glmrvn" class="link" target="_blank">github</a>
-        <a href="https://www.figma.com/@glmrvn" class="link" target="_blank">figma</a>
-        <a href="https://www.linkedin.com/in/alex-dyakov" class="link" target="_blank">in</a>
-        <a href="https://medium.com/@glmrvn" class="link" target="_blank">medium</a>
-        <a href="https://www.facebook.com/glmrvn" class="link" target="_blank">fb</a>
-    </div>
+        <p>
+            Zoom logic. For precise adjustment across zoom levels, breakpoints or smooth value transitions are used.
+        </p>
+
+        <img
+            src="../img/cartograph/cartograph_case_5.jpg"
+            alt="Zoom logic example"
+            loading="lazy"
+        >
+
+        <img
+            src="../img/cartograph/cartograph_case_3_1.jpg"
+            alt="Zoom breakpoints configuration"
+            loading="lazy"
+        >
+
+        <video
+            id="small-video"
+            autoplay
+            loop
+            muted
+            playsinline
+            preload="metadata"
+        >
+            <source src="../img/cartograph/cartograph_zoom.mp4" type="video/mp4">
+        </video>
+
+        <p>
+            Working with colors. The color picker supports all color schemes.
+            Styles can be saved and updated.
+        </p>
+
+        <img
+            src="../img/cartograph/cartograph_case_2.jpg"
+            alt="Color picker interface"
+            loading="lazy"
+        >
+
+        <img
+            src="../img/cartograph/cartograph_case_color-min.jpeg"
+            alt="Color styles configuration"
+            loading="lazy"
+        >
+
+        <p>
+            Settings. You can choose to display all types of data and customize Cartograph to your liking.
+        </p>
+
+        <img
+            src="../img/cartograph/cartograph_case_3.jpg"
+            alt="Global settings screen"
+            loading="lazy"
+        >
+
+        <img
+            src="../img/cartograph/cartograph_case_3_2.jpg"
+            alt="Additional settings options"
+            loading="lazy"
+        >
+
+        <p>
+            JSON editor. You can write styles for the map using code if needed.
+        </p>
+
+        <img
+            src="../img/cartograph/cartograph_case_5_1.jpg"
+            alt="JSON style editor"
+            loading="lazy"
+        >
+
+        <p>
+            Working with branches. Efficient branch management and release system similar to GitHub.
+        </p>
+
+        <img
+            src="../img/cartograph/cartograph_case_6.jpg"
+            alt="Branch management interface"
+            loading="lazy"
+        >
+
+        <p>
+            And some design fun.
+        </p>
+
+        <img
+            src="../img/cartograph/cartograph_case_7.jpg"
+            alt="Experimental map styles"
+            loading="lazy"
+        >
+
+        <p>
+            Mocks.
+        </p>
+
+        <video
+            autoplay
+            loop
+            muted
+            playsinline
+            preload="metadata"
+            class="last-img"
+        >
+            <source src="../img/cartograph/cartograph.mp4" type="video/mp4">
+        </video>
+
+    </section>
+
+    <!-- Team & details -->
+    <section class="project-meta">
+        <dl class="project-meta__grid">
+
+            <div class="project-meta__item">
+                <dt>Team</dt>
+                <dd>
+                    Designer — Alex Dyakov<br>
+                    Product Manager<br>
+                    2 Frontend & 2 Backend Developers
+                </dd>
+            </div>
+
+            <div class="project-meta__item">
+                <dt>Type</dt>
+                <dd>New internal tool</dd>
+            </div>
+
+            <div class="project-meta__item">
+                <dt>Used tools</dt>
+                <dd>Sketch<br>Principle</dd>
+            </div>
+
+        </dl>
+    </section>
+
+</main>
+
+<footer id="bottom-menu">
+    <a href="https://dribbble.com/glmrvn" target="_blank" rel="noopener noreferrer">dribbble</a>
+    <a href="https://github.com/glmrvn" target="_blank" rel="noopener noreferrer">github</a>
+    <a href="https://www.figma.com/@glmrvn" target="_blank" rel="noopener noreferrer">figma</a>
+    <a href="https://www.linkedin.com/in/alex-dyakov" target="_blank" rel="noopener noreferrer">in</a>
+    <a href="https://medium.com/@glmrvn" target="_blank" rel="noopener noreferrer">medium</a>
+    <a href="https://www.facebook.com/glmrvn" target="_blank" rel="noopener noreferrer">fb</a>
+</footer>
+
 </body>
+</html>
