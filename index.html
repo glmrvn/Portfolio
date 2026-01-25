@@ -1,127 +1,204 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Alex D'yakov</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/darkmode.css">
-    <link rel="stylesheet" href="style/mobile.css">
-    <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
-    <script src="scripts/script.js"></script>
+    <title>Alex Dyakov</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <link rel="stylesheet" href="style/case.css">
+    <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162849880-1"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}    
+            gtag('js', new Date());
+            gtag('config', 'UA-162849880-1');
+    </script>
 
-    gtag('config', 'UA-162849880-1');
+    <script>
+        function changeOpacity(value) {
+        link = document.getElementsByClassName('link')
+        for(var i = 0, j = link.length; i < j; i++) { 
+            link[i].style.opacity = value;
+        }
+        }
+
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+        var button = document.getElementById("floating-button-cases");
+        
+        if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+            button.classList.add("show");
+        } else {
+            button.classList.remove("show");
+        }
+        
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 300) {
+            button.classList.remove("show");
+        }
+        }
     </script>
 
 </head>
 
 <body>
-    <!-- Header -->
-    <div style="width: 96%; margin: 0 auto;">
-        <div class="row">
-            <div class="column_new">
-                <p>Designer</p>
-                <p class="black-text"><a href="/Interview/" class="black-text">Alex Dyakov</a></br><a href="https://t.me/dsgn_surface" class="black-text" target="_blank">@dsgn_surface</a> ↗</p>
+
+<main>
+    <a href="/Cases/" id="floating-button-cases">Show cases →</a>
+
+    <section class="project-meta">
+        <dl class="project-meta__grid">
+
+            <div class="project-meta__item">
+                <dt>Designer</dt>
+                <dd>
+                    <a href="/Interview/">Alex Dyakov</a><br>
+                    <a href="https://t.me/dsgn_surface" target="_blank" rel="noopener">@dsgn_surface</a>
+                </dd>
             </div>
 
-            <!-- <div class="column_new">
-                <p>Currently</p>
-                <p class="black-text"><a class="black-text" href="https://companiesmarketcap.com/yandex/revenue/" target="_blank">Yandex</a> ↗</br>55.7558° N, 37.6173° E</p>
-            </div> -->
-
-            <div class="column_new">
-                <p>Links</p>
-                <p class="black-text"><a class="black-text" href="/Cases/">cases</a></br><a class="black-text" href="cv.html" target="_blank">read cv</a></br><a class="black-text" href="https://www.linkedin.com/in/alex-dyakov" target="_blank">linkedin</a></p>
+            <div class="project-meta__item">
+                <dt>Currently</dt>
+                <dd>Kinopoisk<br>55.7558° N, 37.6173° E</dd>
             </div>
+
+            <div class="project-meta__item">
+                <dt>Links</dt>
+                <dd>
+                    <a href="/Cases/">cases</a><br>
+                    <a href="cv.html" target="_blank">readcv</a><br>
+                    <a href="https://www.linkedin.com/in/alex-dyakov" target="_blank">linkedin</a>
+                </dd>
+            </div>
+
+        </dl>
+    </section>
+
+    <!-- Intro & timeline -->
+    <section class="wrap">
+
+        <p>
+            Digital Product Designer ✦ <br>Currently, I am designing
+            <a href="https://apps.apple.com/ru/app/id477718890?l=en-GB" target="_blank" rel="noopener">Kinopoisk</a> ✦
+            Creator of
+            <a href="https://www.figma.com/community/plugin/760927481606931799/Appearance" target="_blank">Appearance Plugin</a>,
+            <a href="https://ui8.net/ikke/products/stockholm-icon-set" target="_blank">Stockholm Icons</a>
+            &amp;
+            <a href="https://glmrvn.github.io/Right-question/" target="_blank">Right&nbsp;Question</a> ✦
+        </p>
+
+        <section class="intro-grid">
+
+        <div class="intro-left">
+            <p class="timeline">
+                <span class="timeline-date">2025 — ✦</span><br>
+                <span class="timeline-text">Head of Growth Design @ Kinopoisk</span><br><br>
+
+                <span class="timeline-date">2021 — 2025</span><br>
+                <span class="timeline-text">Head of Product Design @ Yandex Maps</span><br><br>
+
+                <span class="timeline-date">2017 — 2021</span><br>
+                <span class="timeline-text">Senior → Lead Product Designer @ Yandex Maps</span><br><br>
+
+                <span class="timeline-date">2016 — 2017</span><br>
+                <span class="timeline-text">Senior Product Designer @ Bank Otkritie</span><br><br>
+
+                <span class="timeline-date">2015 — 2016</span><br>
+                <span class="timeline-text">Product Designer @ Voltmobi</span><br><br>
+
+                <span class="timeline-date">2014 — 2015</span><br>
+                <span class="timeline-text">Designer @ PR-Solution</span>
+            </p>
         </div>
-    </div>
 
-    <!-- Text -->
-    <div class="wrap">  
-        <h1 class="black-text">Digital Product Designer ✦ Currently,&nbspI&nbspam designing <a class="black-text" href="https://apps.apple.com/ru/app/id477718890?l=en-GB" target="_blank">Kinopoisk</a> ✦ Creator&nbspof <a class="black-text" href="https://www.figma.com/community/plugin/760927481606931799/Appearance" target="_blank">Appearance Plugin</a>, <a class="black-text" href="https://ui8.net/ikke/products/stockholm-icon-set" target="_blank">Stockholm Icons</a>, & <a class="black-text" href="https://glmrvn.github.io/Right-question/" target="_blank">Right&nbspQuestion</a>&nbsp✦</h1>
-        
-        <div class="row" style="margin-top: 80px;">
-            <div class="column second"><p>
-                2025 —  ✦</br><span class="black-text">Head of Growth Design @ Kinopoisk</span></br></br>
-                2021 — 2025</br><span class="black-text">Head of Product Design @ Yandex Maps</span></br></br>
-                2017 — 2021</br><span class="black-text">Senior → Lead Product Designer @ Yandex Maps</span></br></br>
-                2016 — 2017</br><span class="black-text">Senior Product Designer @ Bank Otkritie</span></br></br>
-                2015 — 2016</br><span class="black-text">Product Designer @ Voltmobi</span></br></br>
-                2014 — 2015</br><span class="black-text">Designer @ PR-Solution</span></p></div>
-            <div class="column seventy"><p>About</br><span class="black-text">
-                I provide forward-thinking solutions from scratch to production. Currently, I am leading the growth design at Kinopoisk. I am responsible for business goals and the overall experience of user acquisition and engagement within the product.</span></br></br>
-                Principles</br><span class="black-text">
-                - Start with the problem</br>
-                - Create stories, not interfaces</br>
-                - Keep it simple</span></p>
-            </div>
+        <div class="intro-right">
+            <p>
+                <span class="intro-muted">About</span><br>
+                <span class="timeline-text">
+                    I provide forward-thinking solutions from scratch to production. Currently, I am leading the growth design at Kinopoisk. I am responsible for business goals and the overall experience of user acquisition and engagement within the product.
+                </span><br><br>
+
+                <span class="intro-muted">Principles</span><br>
+                <span class="timeline-text">
+                    - Start with the problem<br>
+                    - Create stories, not interfaces<br>
+                    - Keep it simple
+                </span>
+            </p>
         </div>
 
-        <!-- Images -->
-        <img src="img/cases/yandx_case_23.jpg" alt="">
+    </section>
+
+        <img src="img/cases/yandx_case_23.jpg" alt="Yandex case" loading="lazy">
+
         <!-- <img src="img/cases/concept-5-case.png" alt=""> -->
-        <center><video autoplay loop muted width="940" src="img/carplay/cp.mp4" alt=""></video></center>
+
+        <video autoplay loop muted playsinline preload="metadata">
+            <source src="img/carplay/cp.mp4" type="video/mp4">
+        </video>
+
         <!-- <img src="img/cases/yndx_myplaces.jpg" alt=""> -->
-        <img src="img/taxi/taxi_case_13_1-min.jpg" alt="">
-        <img src="img/cases/yndx-watch.jpg" alt="">
-        <img src="img/applewatch/watch_case_pic_4-min.jpg" alt="">
+
+        <img src="img/taxi/taxi_case_13_1-min.jpg" alt="Taxi case" loading="lazy">
+        <img src="img/cases/yndx-watch.jpg" alt="Watch" loading="lazy">
+        <img src="img/applewatch/watch_case_pic_4-min.jpg" alt="Apple Watch" loading="lazy">
         <!-- <img src="img/applewatch/watch_case_pic_2-min.jpg" alt=""> -->
-        <img src="img/cases/yndx-case-1.jpg" alt="">
-        <img src="img/myplaces/myplaces_img_12-min.jpg" alt="">
-        <img src="img/cases/yandx-case-2.png" alt="">
-        <img src="img/cartograph/cartograph_case_5.jpg" alt="">
-        <img src="img/taxi/taxi_case_14-min.jpg" alt="">
-        <center><video autoplay loop muted width="940" src="img/cartograph/cartograph.mp4" alt=""></video></center>
-        <img src="img/cartograph/cartograph_case_0.jpg" alt="">
+        <img src="img/cases/yndx-case-1.jpg" alt="Yandex case" loading="lazy">
+        <img src="img/myplaces/myplaces_img_12-min.jpg" alt="My Places" loading="lazy">
+        <img src="img/cases/yandx-case-2.png" alt="Case 2" loading="lazy">
+        <img src="img/cartograph/cartograph_case_5.jpg" alt="Cartograph" loading="lazy">
+        <img src="img/taxi/taxi_case_14-min.jpg" alt="Taxi" loading="lazy">
+
+        <video autoplay loop muted playsinline preload="metadata">
+            <source src="img/cartograph/cartograph.mp4" type="video/mp4">
+        </video>
+
+        <img src="img/cartograph/cartograph_case_0.jpg" alt="Cartograph" loading="lazy">
         <!-- <img src="img/cases/open-bank-case.png" alt=""> -->
         <!-- <img src="img/cases/concept-4-case.png" alt=""> -->
         <!-- <img src="img/cases/open-bank-case-2.png" alt=""> -->
-        <img src="img/cases/stockholm-case.png" alt="">
-        <img src="img/cases/concept-5-case.png" alt="">
-        <center><video autoplay loop muted width="940" src="img/profile.mp4" alt=""></video></center>
-        <img src="img/cartograph/cartograph_case_7.jpg" alt="">
-        <img src="img/myplaces/myplaces_img_10-min.jpg" alt="">
-        <center><video autoplay loop muted width="940" src="img/carplay/cp_freedrive.mp4" alt=""></video></center>
-        <img src="img/cases/concept-2-case.png" alt="">
+        <img src="img/cases/stockholm-case.png" alt="Stockholm" loading="lazy">
+        <img src="img/cases/concept-5-case.png" alt="Concept" loading="lazy">
+
+        <video autoplay loop muted playsinline preload="metadata">
+            <source src="img/profile.mp4" type="video/mp4">
+        </video>
+
+        <img src="img/cartograph/cartograph_case_7.jpg" alt="Cartograph" loading="lazy">
+        <img src="img/myplaces/myplaces_img_10-min.jpg" alt="My Places" loading="lazy">
+
+        <video autoplay loop muted playsinline preload="metadata">
+            <source src="img/carplay/cp_freedrive.mp4" type="video/mp4">
+        </video>
+
+        <img src="img/cases/concept-2-case.png" alt="Concept" loading="lazy">
         <!-- <img src="img/cases/voltmobi-case.jpg" alt=""> -->
-        <img src="img/cases/voltmobi-case-2.png" alt="">
-        <center><video autoplay loop muted width="940" src="img/cases/yakitoria.mp4" alt=""></video></center>
-        <img src="img/cases/concept-3-case.png" alt="">
-        <img src="img/cases/right-question-case.jpg" alt="">
-        <img src="img/myplaces/myplaces_img_11-min.jpg" alt="">
+        <img src="img/cases/voltmobi-case-2.png" alt="Voltmobi" loading="lazy">
+
+        <video autoplay loop muted playsinline preload="metadata">
+            <source src="img/cases/yakitoria.mp4" type="video/mp4">
+        </video>
+
+        <img src="img/cases/concept-3-case.png" alt="Concept" loading="lazy">
+        <img src="img/cases/right-question-case.jpg" alt="Right Question" loading="lazy">
+        <img src="img/myplaces/myplaces_img_11-min.jpg" alt="My Places" loading="lazy">
         <!-- <img src="img/cases/pr-solution-case.png" alt=""> -->
         <!-- <img src="img/cases/pr-solution-case-2.png" alt=""> -->
-        <img src="img/cases/yandx-mob-case.png" alt="" class="last-img">
-        <!-- <img src="img/cases/concept-1-case.png" alt="" class="last-img"> -->
 
-        <!-- Button -->
-        <a id="floating-button-cases" class="black-text" href="/Cases/">Show cases →</a>
-        
-        <!-- Botton navigation -->
-        <div class="bottom-links">
-            <a href="#">up  ↑</a>
-            <a href="/Cases/">cases  →</a>
-            <a href="mailto:glmrvn@gmail.com">contact me  →</a>
-            <a href="#bottom-menu" onmouseover="changeOpacity('1')" onmouseout="changeOpacity('0.4')">more  ↓</a>
-        </div>
-    </div>
+        <img src="img/cases/yandx-mob-case.png" alt="Mobile case" loading="lazy" class="last-img">
 
-    <!-- Footer -->
-    <div id="bottom-menu">
-        <a href="https://dribbble.com/glmrvn" class="link" target="_blank">dribbble</a>
-        <a href="https://github.com/glmrvn" class="link" target="_blank">github</a>
-        <a href="https://www.figma.com/@glmrvn" class="link" target="_blank">figma</a>
-        <a href="https://www.linkedin.com/in/alex-dyakov" class="link" target="_blank">in</a>
-        <a href="https://medium.com/@glmrvn" class="link" target="_blank">medium</a>
-        <a href="https://www.facebook.com/glmrvn" class="link" target="_blank">fb</a>
-    </div>
+    </section>
+
+</main>
+
+<footer id="bottom-menu">
+    <a href="https://dribbble.com/glmrvn" target="_blank" rel="noopener noreferrer">dribbble</a>
+    <a href="https://github.com/glmrvn" target="_blank" rel="noopener noreferrer">github</a>
+    <a href="https://www.figma.com/@glmrvn" target="_blank" rel="noopener noreferrer">figma</a>
+    <a href="https://www.linkedin.com/in/alex-dyakov" target="_blank" rel="noopener noreferrer">in</a>
+    <a href="https://medium.com/@glmrvn" target="_blank" rel="noopener noreferrer">medium</a>
+    <a href="https://www.facebook.com/glmrvn" target="_blank" rel="noopener noreferrer">fb</a>
+</footer>
 
 </body>
 </html>
