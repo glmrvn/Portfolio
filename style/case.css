@@ -178,9 +178,9 @@ a:hover {
     border-radius: 24px;
     backdrop-filter: blur(4px);
     border: 1px solid white;
-    transition: .05s;
+    transition: .2s;
 }
-#floating-button-cases:hover { bottom: 66px; text-decoration: none; }
+#floating-button-cases:hover { bottom: 68px; text-decoration: none; }
 
 #floating-button-cases.show { opacity: 1; pointer-events: auto; }
 
