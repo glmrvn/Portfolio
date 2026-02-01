@@ -1,106 +1,136 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Alex D'yakov | My places</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="../style/darkmode.css">
-    <link rel="stylesheet" href="../style/mobile.css">
-    <script src="../scripts/script.js"></script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162849880-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-162849880-1');
-    </script>
-
+    <title>Alex Dyakov | My Places</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../style/case.css">
 </head>
 
 <body>
-    <a href="../Cases/" class="back">←</a>
 
-    <div class="wrap">
-        <div class="about">
-            <p>September, 2020</p>
-            <h1><span class="black-text">My places. How we redesigned My places and created shared lists</h1>
-            <p class="black-text">Creating a "My Lists and Places" feature in a maps application can amplify user engagement by allowing users to save and organize their favorite locations, which increases the time they spend within the app. This feature also improves the user experience by providing a more personalized and convenient interface, making the app more valuable and useful to users.</p>
-            <p class="black-text">We started this project in 2020 during the difficult times of COVID. Our team consisted of me, the product manager, analysts, and developers.</p>
-            <img src="../img/myplaces/myplaces_img_1-min.jpg" alt="">
+<main>
 
-            </br>
-            <p class="question">Context and Problem</p>
-            <p class="black-text">Millions of people are using the Maps app every day. People love to save their favorite places on lists. And they have many reasons. Some people want to create a list with plans for the next trip. Or they keep these places in lists to find them in the interface faster. Also, people could start their user flow in one application and continue in another Yandex application.</p>
-            <!-- <p class="black-text">For example, you found a restaurant on the Yandex Maps website and then saved this place. Then you can easily find this restaurant in the Yandex Maps mobile applications and call or book a table. Then, after a couple of hours, you could use Yandex Navigator and go to this restaurant. The next day, you can write a review or rebook, and so on. Saved places and created lists help you get things done faster.</p> -->
-            <!-- <img src="../img/myplaces/myplaces_img_2-min.jpg" alt=""> -->
-            <!-- <p class="black-text">We had a lot of user requests to improve saved lists and decided to update this part of our product. This project is about the quality of our product and user-friendly feature.</p> -->
+    <!-- Project meta -->
+    <section class="project-meta">
+        <dl class="project-meta__grid">
 
-            <!-- <p class="question">Problem</p> -->
-            <p class="black-text">The main goal of this project was to set up a new data format for our updated My Places. One of the feature requirements was list sharing, which means we should have to create it privately. Our users should share the list with comments without any problems.</p>
-            <!-- <p class="black-text">Another big problem was the multi-platform launch. Web, iOS, and Android must be available in one day. For a product designer, this means many small iterations. Also, the design of My Places was outdated and had UI and UX issues.</p> -->
+            <div class="project-meta__item">
+                <dt>Project</dt>
+                <dd>My Places<br>YM03</dd>
+            </div>
 
-            <p class="question">Process. Research and Setup</p>
-            <p class="black-text">We're looking into how people use bookmarks these days. We dived into our analytics to see how many lists and places our users have. No brainer, people love places, but they don't use a lot of lists. They usually only use one list, which they have by default. There are two ways to save space in our product. First, by toponym or organization card. The second, of the long tap menu that you can use in any scenario.</p>
-            <img src="../img/myplaces/myplaces_img_3-min.jpg" alt="">
-            <p class="black-text">We dived into app store user reviews and user requests for our product. People use bookmarks and want to share them. That has been one of the biggest user requests, and our competitor already has this feature.</p>
-            <p class="black-text">We also received feedback from our users about the ability to leave a comment. They wanted it because if you share a list, very important to tell someone why this place is on your list. In most cases, this will be like a recommendation or a brief conclusion about places.</p>
-            <img src="../img/myplaces/myplaces_img_4-min.jpg" alt="">
-            <p class="black-text">The product manager and I agreed on the data format of the new lists. I dived in the mocks the manager started setting up the backend team.</p>
+            <div class="project-meta__item">
+                <dt>Release</dt>
+                <dd>Sep, 2020</dd>
+            </div>
 
-            <p class="question">Process. My places</p>
-            <!-- <p class="black-text">It is how My places looked like when I started working on them. We had a search and filter, home/work snippets, and your lists.</p> -->
-            <!-- <img src="../img/myplaces/myplaces_img_5-min.jpg" alt=""> -->
-            <!-- <p class="black-text">As you can see, most of these modules have problems. For example, hard to decide how to edit a saved home or work. This screen has a universal editing mode that you might have seen in older versions of iOS</p> -->
-            <p class="black-text">First, I tried to use one design pattern for all list items and remove Edit Mode. After a few iterations, my solution was clear. Now all list items will have a button ••• with options. There are various options for listings and locations on the menu. It is a good template for using the menu context menu.</p>
-            <img src="../img/myplaces/myplaces_img_6-min.jpg" alt="">
-            <p class="black-text">In my solution, you can follow (save) the list from another user. But these lists have a difference. You can see that your lists and the subscribed lists have different designs. Your lists have the icon, and subscribed lists have photos. I decided to show the difference between these types of lists. If I use the same design, it looks identical. It means we have a problem recognizing which one lists belongs to you.</p>
-            <img src="../img/myplaces/myplaces_img_7_1-min.jpg" alt="">
-            <img src="../img/myplaces/myplaces_img_7-min.jpg" alt="">
-            <p class="black-text">The new search now uses the same list item component. You can see your places and a list we haven't shown before.</p>
-            <img src="../img/myplaces/myplaces_img_8-min.jpg" alt="">
+            <div class="project-meta__item">
+                <dt>Platform</dt>
+                <dd>iOS<br>Android<br>Web</dd>
+            </div>
 
-            <p class="question">Process. Creating list</p>
-            <p class="black-text">First of all, let's discuss how to manage your lists. Previously, you could create lists, arrange them, and show or hide them on the map.</p>
-            <p class="black-text">For all our users, we have added several new features. Users can now select an icon for lists and add a description. The selected icon will use as a list marker on the map.</p>
-            <img src="../img/myplaces/myplaces_img_9-min.jpg" alt="">
-            <p class="black-text">For the color icon selection screen, I use the rubric icons. It is the same icons we used in maps (over 100 icons). For iOS, we wanted to add emoji support, but it's not easy because it should work on all platforms. By the way, the emoji had supported already by the hack. It works if you use the emoji of the first letter of the name.</p>
-            <img src="../img/myplaces/myplaces_img_10-min.jpg" alt="">
-            <p class="black-text">Finally, it is how it looks on the map. I used zoom dependency and showed two icon sizes. As you get closer, you will see the name on the saved location. I supported a dark and light theme where I used some rules for a perfect display on the map.</p>
-            <img src="../img/myplaces/myplaces_img_11-min.jpg" alt="">
+        </dl>
+    </section>
 
-            <p class="question">Process. Lists</p>
-            <p class="black-text">For places in lists, I use the same principle as with snippets on the main screen of lists. I have added ••• an options button also a comment (notes) module for each saved location. Tapping on input will open an input screen with a keyboard.</p>
-            <img src="../img/myplaces/myplaces_img_12-min.jpg" alt="">
-            <p class="black-text">The header also has ••• and buttons for Share and Add Place. For public lists, I use the same design. But additionally, show the author and a button to save or subscribe to this list.</p>
-            <p class="black-text">A description can contain a lot of text, which means the lists can be collections of places from influencers or publishers.</p>
-            <img src="../img/myplaces/myplaces_img_13-min.jpg" alt="">
-            <p class="black-text">We show galleries for fists with organizations or place names that have images. It shows the first image from places in the list. We use this module in our organizations and toponyms.</p>
-            <img src="../img/myplaces/myplaces_img_14-min.jpg" alt="">
-            <p class="black-text">Finally, we got the list screen. You can collapse the list and see all places on the map.</p>
-            <img src="../img/myplaces/myplaces_img_15-min.jpg" alt="">
+    <!-- Content -->
+    <section class="wrap">
 
-            <p class="question">Result</p>
-            <p class="black-text">Two years passed from the beginning of the project to the final decision in production. We took small steps to integrate feature by feature to get a redesign. The big challenge for our team was to develop this solution on three platforms at the same time. We took our first step on the Desktop and Touch platform because it's the fastest way.</p>
-            <!-- <img src="../img/myplaces/myplaces_img_16-min.jpg" alt=""> -->
-            <p class="black-text">Experiments with the new design have been successful. The user's feedback has been excellent. People love how it looks on a map. People are starting to use lists and share them.</p>
-            <img src="../img/myplaces/myplaces_img_17-min.jpg" alt="">
-            <p class="black-text">The final result is here. A lot of hard work and complicated development. It is just the beginning of our journey. Stay tuned for new major releases</p>
-            <img src="../img/myplaces/myplaces_img_1-min.jpg" class="last-img" alt="">
-        </div>
+        <p>Creating a "My Lists and Places" feature in a maps application can amplify user engagement by allowing users to save and organize their favorite locations, which increases the time they spend within the app.</p>
+        <p>This feature also improves the user experience by providing a more personalized and convenient interface, making the app more valuable and useful to users.</p>
+        <img src="../img/myplaces/myplaces_img_1-min.jpg" alt="">
+    
+        <h2>Context and Problem</h2>
+        <p class="case-text">Millions of people are using the Maps app every day. People love to save their favorite places on lists. And they have many reasons. Some people want to create a list with plans for the next trip. Or they keep these places in lists to find them in the interface faster. Also, people could start their user flow in one application and continue in another Yandex application.</p>
+    
+        <p class="case-text">The main goal of this project was to set up a new data format for our updated My Places. One of the feature requirements was list sharing, which means we should have to create it privately. Our users should share the list with comments without any problems.</p>
+    
+        <h2>Research and Setup</h2>
+        <p class="case-text">We're looking into how people use bookmarks these days. We dived into our analytics to see how many lists and places our users have. No brainer, people love places, but they don't use a lot of lists. They usually only use one list, which they have by default. There are two ways to save space in our product. First, by toponym or organization card. The second, of the long tap menu that you can use in any scenario.</p>
+        <img src="../img/myplaces/myplaces_img_3-min.jpg" alt="">
+        <p class="case-text">We dived into app store user reviews and user requests for our product. People use bookmarks and want to share them. That has been one of the biggest user requests, and our competitor already has this feature.</p>
+        <p class="case-text">We also received feedback from our users about the ability to leave a comment. They wanted it because if you share a list, very important to tell someone why this place is on your list. In most cases, this will be like a recommendation or a brief conclusion about places.</p>
+        <p class="case-text">The product manager and I agreed on the data format of the new lists. I dived in the mocks the manager started setting up the backend team.</p>
+        <img src="../img/myplaces/myplaces_img_4-min.jpg" alt="">
+    
+        <h2>Process. My places</h2>
+        <p class="case-text">First, I tried to use one design pattern for all list items and remove Edit Mode. After a few iterations, my solution was clear. Now all list items will have a button ••• with options. There are various options for listings and locations on the menu. It is a good template for using the menu context menu.</p>
+        <img src="../img/myplaces/myplaces_img_7_1-min.jpg" alt="">
 
-    </div>
+        <img src="../img/myplaces/myplaces_img_6-min.jpg" alt="">
 
-    <!-- Footer -->
-    <div id="bottom-menu">
-        <a href="https://dribbble.com/glmrvn" class="link" target="_blank">dribbble</a>
-        <a href="https://github.com/glmrvn" class="link" target="_blank">github</a>
-        <a href="https://www.figma.com/@glmrvn" class="link" target="_blank">figma</a>
-        <a href="https://www.linkedin.com/in/alex-dyakov" class="link" target="_blank">in</a>
-        <a href="https://medium.com/@glmrvn" class="link" target="_blank">medium</a>
-        <a href="https://www.facebook.com/glmrvn" class="link" target="_blank">fb</a>
-    </div>
+        <p class="case-text">In my solution, you can follow (save) the list from another user. But these lists have a difference. You can see that your lists and the subscribed lists have different designs. Your lists have the icon, and subscribed lists have photos. I decided to show the difference between these types of lists. If I use the same design, it looks identical. It means we have a problem recognizing which one lists belongs to you.</p>
+        <img src="../img/myplaces/myplaces_img_7-min.jpg" alt="">
+        <p class="case-text">The new search now uses the same list item component. You can see your places and a list we haven't shown before.</p>
+        <img src="../img/myplaces/myplaces_img_8-min.jpg" alt="">
+    
+        <h2>Creating list</h2>
+        <p class="case-text">First of all, let's discuss how to manage your lists. Previously, you could create lists, arrange them, and show or hide them on the map.</p>
+        <p class="case-text">For all our users, we have added several new features. Users can now select an icon for lists and add a description. The selected icon will use as a list marker on the map.</p>
+        <img src="../img/myplaces/myplaces_img_9-min.jpg" alt="">
+        <p class="case-text">For the color icon selection screen, I use the rubric icons. It is the same icons we used in maps (over 100 icons). For iOS, we wanted to add emoji support, but it's not easy because it should work on all platforms. By the way, the emoji had supported already by the hack. It works if you use the emoji of the first letter of the name.</p>
+        <img src="../img/myplaces/myplaces_img_10-min.jpg" alt="">
+        <p class="case-text">Finally, it is how it looks on the map. I used zoom dependency and showed two icon sizes. As you get closer, you will see the name on the saved location. I supported a dark and light theme where I used some rules for a perfect display on the map.</p>
+        <img src="../img/myplaces/myplaces_img_11-min.jpg" alt="">
+    
+        <h2>Process. Lists</h2>
+        <p class="case-text">For places in lists, I use the same principle as with snippets on the main screen of lists. I have added ••• an options button also a comment (notes) module for each saved location. Tapping on input will open an input screen with a keyboard.</p>
+        <img src="../img/myplaces/myplaces_img_12-min.jpg" alt="">
+        <p class="case-text">The header also has ••• and buttons for Share and Add Place. For public lists, I use the same design. But additionally, show the author and a button to save or subscribe to this list.</p>
+        <p class="case-text">A description can contain a lot of text, which means the lists can be collections of places from influencers or publishers.</p>
+        <img src="../img/myplaces/myplaces_img_13-min.jpg" alt="">
+        <p class="case-text">We show galleries for fists with organizations or place names that have images. It shows the first image from places in the list. We use this module in our organizations and toponyms.</p>
+        <img src="../img/myplaces/myplaces_img_14-min.jpg" alt="">
+        <p class="case-text">Finally, we got the list screen. You can collapse the list and see all places on the map.</p>
+        <img src="../img/myplaces/myplaces_img_15-min.jpg" alt="">
+    
+        <h2>Result</h2>
+        <p class="case-text">Two years passed from the beginning of the project to the final decision in production. We took small steps to integrate feature by feature to get a redesign. The big challenge for our team was to develop this solution on three platforms at the same time. We took our first step on the Desktop and Touch platform because it's the fastest way.</p>
+        <p class="case-text">Experiments with the new design have been successful. The user's feedback has been excellent. People love how it looks on a map. People are starting to use lists and share them.</p>
+        <img src="../img/myplaces/myplaces_img_17-min.jpg" alt="">
+        <p class="case-text">The final result is here. A lot of hard work and complicated development. It is just the beginning of our journey. Stay tuned for new major releases</p>
+        <img src="../img/myplaces/myplaces_img_1-min.jpg" class="last-img" alt="">
+    
+    </section>
+    
+
+    <!-- Team -->
+    <section class="project-meta">
+        <dl class="project-meta__grid">
+
+            <div class="project-meta__item">
+                <dt>Team</dt>
+                <dd>
+                    Designer — Alex Dyakov<br>
+                    Product Manager<br>
+                    Analysts<br>
+                    Developers
+                </dd>
+            </div>
+
+            <div class="project-meta__item">
+                <dt>Type</dt>
+                <dd>Project</dd>
+            </div>
+
+            <div class="project-meta__item">
+                <dt>Used tools</dt>
+                <dd>Figma<br>Principle</dd>
+            </div>
+
+        </dl>
+    </section>
+
+</main>
+
+<footer id="bottom-menu">
+    <a href="https://dribbble.com/glmrvn" target="_blank" rel="noopener noreferrer">dribbble</a>
+    <a href="https://github.com/glmrvn" target="_blank" rel="noopener noreferrer">github</a>
+    <a href="https://www.figma.com/@glmrvn" target="_blank" rel="noopener noreferrer">figma</a>
+    <a href="https://www.linkedin.com/in/alex-dyakov" target="_blank" rel="noopener noreferrer">in</a>
+    <a href="https://medium.com/@glmrvn" target="_blank" rel="noopener noreferrer">medium</a>
+    <a href="https://www.facebook.com/glmrvn" target="_blank" rel="noopener noreferrer">fb</a>
+</footer>
+
 </body>
+</html>
