@@ -1,87 +1,155 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Alex D'yakov | Traffic widget</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="../style/darkmode.css">
-    <link rel="stylesheet" href="../style/mobile.css">
-    <script src="../scripts/script.js"></script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <title>Alex Dyakov | Traffic Widget</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../style/case.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162849880-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-162849880-1');
-    </script>
-
 </head>
 
 <body>
-    <a href="../Cases/" class="back">←</a>
 
-    <div class="wrap">
-        <div class="about">
-            <p>March, 2021</p>
-            <h1><span class="black-text">Yandex Maps Traffic Widget</h1>
-            <p class="black-text">iOS 14 gave users the ability to display widgets on any app screen. It is a good feature which we decided to support it. We started with one of the main reasons why people use our product every day. It is information about a traffic situation on the roads.</p>
-            <img src="../img/traffic_widget/traffic_img_1-min.jpg" alt="">
+<main>
 
-            </br>
-            <p class="question">Process</p>
-            <p class="black-text">My first idea was to create a level widget without a map. It is a simplification of how we could show traffic levels. I used colors to show the state of the city's traffic. I also use the travel time to work or home.</p>
-            <img src="../img/traffic_widget/traffic_img_2-min.jpg" alt="">
-            <p class="black-text">I tried several color options, but they looked aggressive and could distract people.</p>
-            <!-- <img src="../img/traffic_widget/traffic_img_3-min.jpg" alt=""> -->
-            <p class="black-text">The problem with this widget is that you don't know what it means for your current situation because this level is for the whole city, not your current location.</p>
-            <p class="black-text">Then I decided the traffic widget works the same as the weather widget. But the problem is that in the weather widget, you can see the sunny or rainy state because it shows information about your current location. The traffic level displays the situation in the whole city. It may not be exactly correct for your current location.</p>
-            <img src="../img/traffic_widget/traffic_img_4-min.jpg" alt="">
-            <p class="black-text">That's why I show our map with the traffic layer. It helps to understand what kind of traffic conditions are around you. The 3-hour forecast is still helpful. I've made the button for opening routes more visible than in the previous version.</p>
-            <p class="black-text">I am showing a map with a radius of almost 2 km for a small and medium widget. In large phones, our user sees a large map.</p>
-            <img src="../img/traffic_widget/traffic_img_5-min.jpg" alt="">
-            <p class="black-text">Now when you see this widget, you can change your decision to go, for example, to go home or to work. Because you can choose between several roads, you can see which ones are in traffic and which are not. When you see the map, you understand the traffic situation within a 2 km radius.</p>
-            <img src="../img/traffic_widget/traffic_img_6-min.jpg" alt="">
-            <p class="black-text">I am using the same color palette as in our application. We have four color gradations for the levels of traffic jams.</p>
-            <img src="../img/traffic_widget/traffic_img_7-min.jpg" alt="">
-            <img src="../img/traffic_widget/traffic_img_8-min.jpg" alt="">
-            <p class="black-text">The middle widget shows the forecast and map in one interface. You can see the level of traffic in the city, traffic jams around you, and the traffic forecast. In the middle button, you can open the app or get directions to home or work if you press the ETA button.</p>
-            <img src="../img/traffic_widget/traffic_img_9-min.jpg" alt="">
-            <p class="black-text">It contains the same information as the weather widget. This information is important because it can change your decision, for example, if it's raining or there are huge traffic jams.</p>
-            <img src="../img/traffic_widget/traffic_img_10-min.jpg" alt="">
-            <p class="black-text">The large widget shows a large piece of the map with a traffic forecast for 6 hours.</p>
-            <img src="../img/traffic_widget/traffic_img_11-min.jpg" alt="">
-            <p class="black-text">We support dark mode. It works with system settings.</p>
-            <img src="../img/traffic_widget/traffic_img_12-min.jpg" alt="">
-            <p class="black-text">An interesting fact about the point of your position. For a small widget, I use the optical center. You can see that if you put the location in the center of the small widget, it looks unbalanced.</p>
-            <img src="../img/traffic_widget/traffic_img_13-min.jpg" alt="">
-            <p class="black-text">For Android widgets, we support all grid states, including large and small variants. We also added settings when adding the widget.</p>
-            <img src="../img/traffic_widget/traffic_img_14-min.jpg" alt="">
-            <p class="black-text">The Android widget has settings. Users can configure traffic jams, map scale, and update time. It means that the traffic widget can be flexible for power users.</p>
-            <img src="../img/traffic_widget/traffic_img_15-min.jpg" alt="">
-            <p class="black-text">That is how the various map scale settings look. I used zoom settings 14, 12, and 10.</p>
-            <img src="../img/traffic_widget/traffic_img_16-min.jpg" alt="">
+    <!-- Project meta -->
+    <section class="project-meta">
+        <dl class="project-meta__grid">
 
-            <p class="question">Result</p>
-            <p class="black-text">I created intro screens where we are showing our new widgets. Here we explain how to add this widget to the screen. Especially useful for iOS because this was a new feature.</p>
-            <img src="../img/traffic_widget/traffic_img_17-min.jpg" alt="">
-            <p class="black-text">Every day, thousands of people use our widget on iOS and Android platforms. I am glad that part of my work helps people. Our solution makes everyday life a little better.</p>
-            <img src="../img/traffic_widget/traffic_img_1-min.jpg" class="last-img" alt="">
+            <div class="project-meta__item">
+                <dt>Project</dt>
+                <dd>Traffic Widget<br>YM05</dd>
+            </div>
 
-        </div>
+            <div class="project-meta__item">
+                <dt>Release</dt>
+                <dd>March, 2021</dd>
+            </div>
 
-    </div>
+            <div class="project-meta__item">
+                <dt>Platform</dt>
+                <dd>iOS<br>Android</dd>
+            </div>
 
-    <!-- Footer -->
-    <div id="bottom-menu">
-        <a href="https://dribbble.com/glmrvn" class="link" target="_blank">dribbble</a>
-        <a href="https://github.com/glmrvn" class="link" target="_blank">github</a>
-        <a href="https://www.figma.com/@glmrvn" class="link" target="_blank">figma</a>
-        <a href="https://www.linkedin.com/in/alex-dyakov" class="link" target="_blank">in</a>
-        <a href="https://medium.com/@glmrvn" class="link" target="_blank">medium</a>
-        <a href="https://www.facebook.com/glmrvn" class="link" target="_blank">fb</a>
-    </div>
+        </dl>
+    </section>
+
+    <!-- Content -->
+    <section class="wrap">
+
+        <p>iOS 14 gave users the ability to add widgets to any screen. We decided to support this feature in Yandex Maps, starting with one of the main reasons people use Maps every day — traffic information.</p>
+
+        <img src="../img/traffic_widget/traffic_img_1-min.jpg" alt="">
+
+        <h2>Process</h2>
+
+        <p class="case-text">My first idea was to create a level-based widget without a map. It simplified the way we could show traffic conditions using color coding and travel time to work or home.</p>
+
+        <img src="../img/traffic_widget/traffic_img_2-min.jpg" alt="">
+
+        <p class="case-text">I tried several color options, but many of them felt too aggressive and distracting.</p>
+
+        <p class="case-text">The main issue with this approach was context. The traffic level represented the whole city and didn’t reflect the user’s actual location.</p>
+
+        <p class="case-text">I explored an analogy with the weather widget. However, unlike weather, traffic conditions vary significantly within a city, which made a single level misleading.</p>
+
+        <img src="../img/traffic_widget/traffic_img_4-min.jpg" alt="">
+
+        <p class="case-text">That’s why I decided to show the actual map with a traffic layer. It allows users to understand the real situation around them. The traffic forecast remained useful, and the route button became more prominent.</p>
+
+        <p class="case-text">For small and medium widgets, the map covers roughly a 2 km radius. On larger devices, users see a wider area.</p>
+
+        <img src="../img/traffic_widget/traffic_img_5-min.jpg" alt="">
+
+        <p class="case-text">This approach helps users make quick decisions — whether to go home, go to work, or choose a different route — based on visible congestion nearby.</p>
+
+        <img src="../img/traffic_widget/traffic_img_6-min.jpg" alt="">
+
+        <p class="case-text">The widget uses the same color palette as the main application, with four traffic congestion levels.</p>
+
+        <img src="../img/traffic_widget/traffic_img_7-min.jpg" alt="">
+        <img src="../img/traffic_widget/traffic_img_8-min.jpg" alt="">
+
+        <p class="case-text">The medium widget combines the map and forecast in one interface. Users can see citywide traffic, local congestion, and open routes or directions using the ETA button.</p>
+
+        <img src="../img/traffic_widget/traffic_img_9-min.jpg" alt="">
+
+        <p class="case-text">Weather conditions are also shown, as they can directly affect traffic and decision-making.</p>
+
+        <img src="../img/traffic_widget/traffic_img_10-min.jpg" alt="">
+
+        <p class="case-text">The large widget displays an extended map with a 6-hour traffic forecast.</p>
+
+        <img src="../img/traffic_widget/traffic_img_11-min.jpg" alt="">
+
+        <p class="case-text">Dark mode is supported and follows system settings.</p>
+
+        <img src="../img/traffic_widget/traffic_img_12-min.jpg" alt="">
+
+        <p class="case-text">For small widgets, I used the optical center instead of the geometric center. Placing the location exactly in the center looked visually unbalanced.</p>
+
+        <img src="../img/traffic_widget/traffic_img_13-min.jpg" alt="">
+
+        <p class="case-text">On Android, we support all widget grid sizes and provide settings during widget setup.</p>
+
+        <img src="../img/traffic_widget/traffic_img_14-min.jpg" alt="">
+
+        <p class="case-text">Android users can configure traffic layers, map scale, and update intervals, making the widget flexible for power users.</p>
+
+        <img src="../img/traffic_widget/traffic_img_15-min.jpg" alt="">
+
+        <p class="case-text">Different zoom levels (14, 12, 10) provide control over map scale.</p>
+
+        <img src="../img/traffic_widget/traffic_img_16-min.jpg" alt="">
+
+        <h2>Result</h2>
+
+        <p class="case-text">I designed onboarding screens explaining how to add widgets, especially important for iOS where widgets were a new feature.</p>
+
+        <img src="../img/traffic_widget/traffic_img_17-min.jpg" alt="">
+
+        <p class="case-text">Today, thousands of people use this widget daily on iOS and Android. Knowing that this work helps people make better everyday decisions is the most valuable outcome.</p>
+
+        <img src="../img/traffic_widget/traffic_img_1-min.jpg" class="last-img" alt="">
+
+    </section>
+
+    <!-- Team -->
+    <section class="project-meta">
+        <dl class="project-meta__grid">
+
+            <div class="project-meta__item">
+                <dt>Team</dt>
+                <dd>
+                    Designer — Alex Dyakov<br>
+                    Product Manager<br>
+                    Developers
+                </dd>
+            </div>
+
+            <div class="project-meta__item">
+                <dt>Type</dt>
+                <dd>Project</dd>
+            </div>
+
+            <div class="project-meta__item">
+                <dt>Used tools</dt>
+                <dd>Figma</dd>
+            </div>
+
+        </dl>
+    </section>
+
+</main>
+
+<footer id="bottom-menu">
+    <a href="https://dribbble.com/glmrvn" target="_blank" rel="noopener noreferrer">dribbble</a>
+    <a href="https://github.com/glmrvn" target="_blank" rel="noopener noreferrer">github</a>
+    <a href="https://www.figma.com/@glmrvn" target="_blank" rel="noopener noreferrer">figma</a>
+    <a href="https://www.linkedin.com/in/alex-dyakov" target="_blank" rel="noopener noreferrer">in</a>
+    <a href="https://medium.com/@glmrvn" target="_blank" rel="noopener noreferrer">medium</a>
+    <a href="https://www.facebook.com/glmrvn" target="_blank" rel="noopener noreferrer">fb</a>
+</footer>
+
 </body>
+</html>
