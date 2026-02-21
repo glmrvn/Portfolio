@@ -1,5 +1,5 @@
 :root {
-    --bg: #ffffff;
+    --bg: #f9f9f9;
     --text: #000000;
     --muted: #aaa;
     --border: #f6f6f6;
@@ -8,7 +8,7 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --bg: #000000;
-        --text: #ffffff;
+        --text: #f9f9f9;
         --muted: #aaa;
         --border: #222222;
     }
@@ -17,7 +17,7 @@
 /* Dark Mode */
 html.theme-dark {
     --bg: #000000;
-    --text: #ffffff;
+    --text: #f9f9f9;
     --muted: #aaa;
     --border: #222222;
 }
@@ -54,7 +54,7 @@ body {
 
 p, h1 {
     font-size: 64px;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: -0.03em;
     margin: 64px 0 0.2em;
     color: var(--text);
