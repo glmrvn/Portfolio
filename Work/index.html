@@ -1,53 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="theme-dark">
 <head>
     <meta charset="UTF-8">
-    <title>Alex D'yakov Cases</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="../style/darkmode.css">
-    <link rel="stylesheet" href="../style/mobile.css">
-    <script src="../scripts/script.js"></script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162849880-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-162849880-1');
-    </script>
-
+    <title>Alex Dyakov | Private work</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../style/case.css">
+    <link rel="icon" href="../img/favicon.png" type="image/png">
 </head>
-
 <body>
-    <style>
-        @media (prefers-color-scheme: light) {
-          body { background: black; }
-          .black-text, .name, .back, a:hover { color: white; }
-          #bottom-menu { background-color: black; border-top: 1px solid #222; }
-          #bottom-menu a { color: white; opacity: 0.45;}
-        }
-    </style>
+<header class="site-nav">
+    <a class="site-nav__brand" href="../">Alex Dyakov</a>
+    <nav class="site-nav__links" aria-label="Main navigation">
+        <a href="../Cases/">Cases</a>
+        <a href="../Projects/">Projects</a>
+        <a href="../Interview/">About</a>
+    </nav>
+</header>
 
-    <a href="../" class="back">←</a>
+<main class="password-panel">
+    <form class="password-form">
+        <label for="pass">This section is password protected</label>
+        <div class="password-form__row">
+            <input type="password" placeholder="Password" id="pass" name="password" minlength="8" autocomplete="current-password" required>
+            <button type="submit" aria-label="Continue">→</button>
+        </div>
+    </form>
+</main>
 
-    <!-- Password input -->
-    <div id="password">
-        <input type="password" placeholder="Password" id="pass" name="password" minlength="8" required>
-        <a href="#" >→</a>
-    </div>
-
-    <!-- Footer -->
-    <div id="bottom-menu">
-        <a href="https://dribbble.com/glmrvn" class="link" target="_blank">dribbble</a>
-        <a href="https://github.com/glmrvn" class="link" target="_blank">github</a>
-        <a href="https://www.figma.com/@glmrvn" class="link" target="_blank">figma</a>
-        <a href="https://www.linkedin.com/in/alex-dyakov" class="link" target="_blank">in</a>
-        <a href="https://medium.com/@glmrvn" class="link" target="_blank">medium</a>
-        <a href="https://www.facebook.com/glmrvn" class="link" target="_blank">fb</a>
-    </div>
+<footer id="bottom-menu">
+    <a href="https://github.com/glmrvn" target="_blank" rel="noopener noreferrer">github</a>
+    <a href="https://www.figma.com/@glmrvn" target="_blank" rel="noopener noreferrer">figma</a>
+    <a href="https://www.linkedin.com/in/alex-dyakov" target="_blank" rel="noopener noreferrer">in</a>
+</footer>
 </body>
-
 </html>

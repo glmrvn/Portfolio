@@ -1,163 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Alex D'yakov Cases</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="../style/darkmode.css">
-    <link rel="stylesheet" href="../style/mobile.css">
-    <script src="../scripts/script.js"></script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162849880-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-162849880-1');
-    </script>
-
+    <title>Alex Dyakov | Cases</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Selected product design work by Alex Dyakov.">
+    <link rel="stylesheet" href="../style/case.css">
+    <link rel="icon" href="../img/favicon.png" type="image/png">
 </head>
-
 <body>
-    <a href="../" class="back">←</a>
+<header class="site-nav">
+    <a class="site-nav__back" href="../" aria-label="Back to home">←</a>
+</header>
 
-    <div class="wrap">
-        <!-- <div class="about">
-            <h1><span class="black-text">Cases</span></br>Selected projects</h1>
-        </div> -->
+<main class="wrap cases-index__content">
+    <section class="case-list" aria-label="Product design cases">
+        <a class="case-card" href="taxi.html">
+            <img src="../img/case_taxi.jpg" alt="Taxi ordering interface in Yandex Maps" loading="lazy">
+            <p class="case-card__date">October 2022</p>
+            <p class="case-card__title">Taxi orders in Yandex Maps</p>
+        </a>
+        <a class="case-card" href="profile.html">
+            <img src="../img/case_profile.jpg" alt="User profile interface in Yandex Maps" loading="lazy">
+            <p class="case-card__date">March 2021 — August 2024</p>
+            <p class="case-card__title">How we created a user profile in Yandex Maps</p>
+        </a>
+        <a class="case-card" href="carplay.html">
+            <img src="../img/case_carplay.jpg" alt="Yandex Maps interface for Apple CarPlay" loading="lazy">
+            <p class="case-card__date">August 2021</p>
+            <p class="case-card__title">Yandex Maps and Navigator for CarPlay and Android Auto</p>
+        </a>
+        <a class="case-card" href="widget.html">
+            <img src="../img/case_widget.jpg" alt="Yandex Maps traffic widget" loading="lazy">
+            <p class="case-card__date">March 2021</p>
+            <p class="case-card__title">Yandex Maps Traffic Widget</p>
+        </a>
+        <a class="case-card" href="myplaces.html">
+            <img src="../img/case_myplaces.jpg" alt="My Places lists in Yandex Maps" loading="lazy">
+            <p class="case-card__date">September 2020</p>
+            <p class="case-card__title">Redesigning My Places and creating shared lists</p>
+        </a>
+        <a class="case-card" href="applewatch.html">
+            <img src="../img/case_applewatch.jpg" alt="Yandex Maps app for Apple Watch" loading="lazy">
+            <p class="case-card__date">May 2019</p>
+            <p class="case-card__title">Yandex Maps for Apple Watch</p>
+        </a>
+        <a class="case-card" href="cartograph.html">
+            <img src="../img/case_cartograph.jpg" alt="Cartograph map editing tool" loading="lazy">
+            <p class="case-card__date">March 2018</p>
+            <p class="case-card__title">How we create tools at Yandex Maps: Cartograph</p>
+        </a>
 
-        <div id="list">
+        <h2 class="case-list__heading">Writing</h2>
+        <a class="case-card" href="https://uxdesign.cc/stop-creating-dark-theme-generate-it-automatically-with-figma-plugin-76256b569df9" target="_blank" rel="noopener noreferrer">
+            <img src="../img/case_appearance_plugin.jpg" alt="Appearance Figma plugin" loading="lazy">
+            <p class="case-card__date">March 2020</p>
+            <p class="case-card__title">Generating dark themes automatically with a Figma plugin</p>
+        </a>
+        <a class="case-card" href="https://uxdesign.cc/how-we-use-figmas-api-to-deliver-design-to-the-production-3de48ee67d32" target="_blank" rel="noopener noreferrer">
+            <img src="../img/case_figma_api.jpg" alt="Figma API design handoff workflow" loading="lazy">
+            <p class="case-card__date">November 2019</p>
+            <p class="case-card__title">How we use Figma’s API to deliver design to production</p>
+        </a>
 
-            <!-- Taxi -->
-            <a href="taxi.html">
-                <div class="case">
-                <img src="../img/case_taxi.jpg" alt="">
-                <p>October 2022</p>
-                <p class="black-text">Taxi orders in Yandex Maps</p>
-                </div>
-            </a>
+        <h2 class="case-list__heading">Speaking</h2>
+        <a class="case-card" href="https://youtu.be/JeZTcJSh3gE" target="_blank" rel="noopener noreferrer">
+            <img src="../img/case_video_handoff.jpg" alt="Design handoff talk" loading="lazy">
+            <p class="case-card__date">July 2021</p>
+            <p class="case-card__title">Design handoff: all stages and processes</p>
+        </a>
+        <a class="case-card" href="https://youtu.be/4hKxbvse1_Y" target="_blank" rel="noopener noreferrer">
+            <img src="../img/case_video_design_systems.jpg" alt="Design systems talk" loading="lazy">
+            <p class="case-card__date">June 2021</p>
+            <p class="case-card__title">A dive into design systems and the product design workflow</p>
+        </a>
+        <a class="case-card" href="https://youtu.be/QBdreuWUm0M?t=248" target="_blank" rel="noopener noreferrer">
+            <img src="../img/case_video_yamusic.jpg" alt="Yandex Music TV app concept presentation" loading="lazy">
+            <p class="case-card__date">September 2017</p>
+            <p class="case-card__title">Yandex Music TV App concept presentation</p>
+        </a>
+    </section>
+</main>
 
-            <!-- Profile -->
-            <a href="profile.html">
-                <div class="case">
-                <img src="../img/case_profile.jpg" alt="">
-                <p>March 2021. August 2024</p>
-                <p class="black-text">How we created a user profile in Yandex Maps</p>
-                </div>
-            </a>
-
-            <!-- CarPlay -->
-            <a href="carplay.html">
-                <div class="case">
-                <img src="../img/case_carplay.jpg" alt="">
-                <p>August 2021</p>
-                <p class="black-text">Yandex Maps and Navigator for  CarPlay and Android Auto</p>
-                </div>
-            </a>
-
-            <!-- Traffic Widget -->
-            <a href="widget.html">
-                <div class="case">
-                <img src="../img/case_widget.jpg" alt="">
-                <p>March 2021</p>
-                <p class="black-text">Yandex Maps Traffic Widget</p>
-                </div>
-            </a>
-
-            <!-- My places -->
-            <a href="myplaces.html">
-                <div class="case">
-                <img src="../img/case_myplaces.jpg" alt="">
-                <p>September 2020</p>
-                <p class="black-text">My places. How we redesigned My places and created shared lists</p>
-                </div>
-            </a>
-
-            <!-- Apple Watch -->
-            <a href="applewatch.html">
-                <div class="case">
-                <img src="../img/case_applewatch.jpg" alt="">
-                <p>May 2019</p>
-                <p class="black-text">Yandex Maps for  Watch</p>
-                </div>
-            </a>
-
-            <!-- Cartograph -->
-            <a href="cartograph.html">
-                <div class="case">
-                <img src="../img/case_cartograph.jpg" alt="">
-                <p>March 2018</p>
-                <p class="black-text">How we create tools at the Yandex Maps. Cartograph</p>
-                </div>
-            </a>
-            
-
-            <!-- Writing Title -->
-            <p class="section-title">Writing</p>
-
-            <!-- Figma Plugin Case -->
-            <a href="https://uxdesign.cc/stop-creating-dark-theme-generate-it-automatically-with-figma-plugin-76256b569df9" target="_blank">
-                <div class="case">
-                <img src="../img/case_appearance_plugin.jpg" alt="">
-                <p>March 2020</p>
-                <p class="black-text">How I created a Figma plugin that automatically generates dark themes</p>
-                </div>
-            </a>
-
-            <!-- Figma API Integration Case -->
-            <a href="https://uxdesign.cc/how-we-use-figmas-api-to-deliver-design-to-the-production-3de48ee67d32" target="_blank">
-                <div class="case">
-                <img src="../img/case_figma_api.jpg" alt="">
-                <p>November 2019</p>
-                <p class="black-text">How we use Figma’s API to deliver design to the production</p>
-                </div>
-            </a>
-
-            <!-- Video Title -->
-            <p class="section-title">Speaking</p>
-            
-            <!-- Video Design Handoff -->
-            <a href="https://youtu.be/JeZTcJSh3gE" target="_blank">
-                <div class="case">
-                <img src="../img/case_video_handoff.jpg" alt="">
-                <p>July 2021</p>
-                <p class="black-text">Design handoff. All stages and processes</p>
-                </div>
-            </a>
-
-            <!-- Video Design Systems -->
-            <a href="https://youtu.be/4hKxbvse1_Y" target="_blank">
-                <div class="case">
-                <img src="../img/case_video_design_systems.jpg" alt="">
-                <p>June 2021</p>
-                <p class="black-text">Dive into design systems. How does our product design team work with it</p>
-                </div>
-            </a>
-
-            <!-- Yandex Music Concept -->
-            <a href="https://youtu.be/QBdreuWUm0M?t=248" target="_blank">
-                <div class="case">
-                <img src="../img/case_video_yamusic.jpg" alt="">
-                <p>September 2017</p>
-                <p class="black-text">Presentations of the concept Yandex Music TV App</p>
-                </div>
-            </a>
-
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <div id="bottom-menu">
-        <a href="https://dribbble.com/glmrvn" class="link" target="_blank">dribbble</a>
-        <a href="https://github.com/glmrvn" class="link" target="_blank">github</a>
-        <a href="https://www.figma.com/@glmrvn" class="link" target="_blank">figma</a>
-        <a href="https://www.linkedin.com/in/alex-dyakov" class="link" target="_blank">in</a>
-        <a href="https://medium.com/@glmrvn" class="link" target="_blank">medium</a>
-        <a href="https://www.facebook.com/glmrvn" class="link" target="_blank">fb</a>
-    </div>
+<footer id="bottom-menu">
+    <a href="https://dribbble.com/glmrvn" target="_blank" rel="noopener noreferrer">dribbble</a>
+    <a href="https://github.com/glmrvn" target="_blank" rel="noopener noreferrer">github</a>
+    <a href="https://www.figma.com/@glmrvn" target="_blank" rel="noopener noreferrer">figma</a>
+    <a href="https://www.linkedin.com/in/alex-dyakov" target="_blank" rel="noopener noreferrer">in</a>
+    <a href="https://medium.com/@glmrvn" target="_blank" rel="noopener noreferrer">medium</a>
+</footer>
 </body>
-
 </html>

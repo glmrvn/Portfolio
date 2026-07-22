@@ -1,64 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Alex D'yakov Inspiration</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="../style/mobile.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="../scripts/script.js"></script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162849880-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-162849880-1');
-    </script>
-
+    <title>Alex Dyakov | Inspiration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Things Alex Dyakov looks at, listens to and reads.">
+    <link rel="stylesheet" href="../style/case.css">
+    <link rel="icon" href="../img/favicon.png" type="image/png">
 </head>
-
 <body>
-    <a href="../" class="back">←</a>
-      
-      <div class="wrap-twitter">
-        <div class="about mob-margin"><h1><span class="black-text">Inspiration</span></br>Look, Listen, Read</h1></div>
-        <div class="work-case"></div>
-        <a class="twitter-timeline" data-chrome="noheader nofooter noborders noscrollbar" href="https://twitter.com/glmrvn?ref_src=twsrc%5Etfw">Tweets by glmrvn</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        <div class="work-case"></div>
-      </div>
-      
-      <script>
-        if (typeof twttr != "undefined") twttr.widgets.load();
-      
-        jQuery('.wrap-twitter').delegate('.twitter-timeline','DOMSubtreeModified propertychange', function() {
-          //function call to override the base twitter styles
-          customizeTweetMedia();
-        });
-      
-        var customizeTweetMedia = function() {
-          jQuery('.wrap-twitter').find('.twitter-timeline').contents().find('.timeline-Tweet-text').css('font-family', 'Arial');
-          jQuery('.wrap-twitter').find('.twitter-timeline').contents().find('.Icon--twitter').remove();
-          jQuery('.wrap-twitter').find('.twitter-timeline').contents().find('.timeline-Tweet-metadata').css('display', 'none');
-          jQuery('.wrap-twitter').find('.twitter-timeline').contents().find('.TweetAuthor-screenName').css('font-weight', '400');
-          jQuery('.wrap-twitter').find('.twitter-timeline').contents().find('.timeline-Tweet-actions').css('display', 'none');
-          jQuery('.wrap-twitter').find('.twitter-timeline').contents().find('.timeline-Tweet-retweetCredit').css('display', 'none');
-          jQuery('.wrap-twitter').find('.twitter-timeline').contents().find('.timeline-Tweet').css('border-radius', '16px');
-        }
-      </script>
+<header class="site-nav">
+    <a class="site-nav__brand" href="../">Alex Dyakov</a>
+    <nav class="site-nav__links" aria-label="Main navigation">
+        <a href="../Cases/">Cases</a>
+        <a href="../Projects/">Projects</a>
+        <a href="../Interview/">About</a>
+        <a href="./" aria-current="page">Inspiration</a>
+    </nav>
+</header>
 
-    <!-- Footer -->
-    <div id="bottom-menu">
-        <a href="https://dribbble.com/glmrvn" class="link" target="_blank">dribbble</a>
-        <a href="https://github.com/glmrvn" class="link" target="_blank">github</a>
-        <a href="https://www.figma.com/@glmrvn" class="link" target="_blank">figma</a>
-        <a href="https://www.linkedin.com/in/alex-dyakov" class="link" target="_blank">in</a>
-        <a href="https://medium.com/@glmrvn" class="link" target="_blank">medium</a>
-        <a href="https://www.facebook.com/glmrvn" class="link" target="_blank">fb</a>
-    </div>
+<main>
+    <header class="wrap page-header">
+        <span class="page-kicker">Inspiration</span>
+        <h1>Look, listen, read.</h1>
+    </header>
+    <section class="embed-wrap" aria-label="Posts by Alex Dyakov">
+        <a class="twitter-timeline" data-chrome="noheader nofooter noborders noscrollbar" data-theme="auto" href="https://twitter.com/glmrvn?ref_src=twsrc%5Etfw">Posts by @glmrvn</a>
+    </section>
+</main>
+
+<footer id="bottom-menu">
+    <a href="https://dribbble.com/glmrvn" target="_blank" rel="noopener noreferrer">dribbble</a>
+    <a href="https://www.figma.com/@glmrvn" target="_blank" rel="noopener noreferrer">figma</a>
+    <a href="https://www.linkedin.com/in/alex-dyakov" target="_blank" rel="noopener noreferrer">in</a>
+</footer>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
-
 </html>
