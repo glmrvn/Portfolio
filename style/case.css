@@ -228,13 +228,35 @@ a:hover {
     text-decoration: none;
 }
 
+.case-card__media {
+    display: block;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border-radius: 16px 16px 0 0;
+}
+
 .case-card img {
     width: 100%;
     aspect-ratio: 16 / 9;
     object-fit: cover;
     display: block;
-    margin: 0 0 20px;
-    border-radius: 16px 16px 0 0;
+    margin: 0;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .case-card img {
+        transition: transform 0.3s ease;
+    }
+
+    .case-card:hover img {
+        transform: scale(1.04);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .case-card img {
+        transition: none;
+    }
 }
 
 .case-card__date,
