@@ -1,9 +1,10 @@
 :root {
-    --bg: #f9f9f9;
+    --bg: #f7f7f7;
     --text: #000000;
     --muted: #aaa;
     --border: #f6f6f6;
     --surface: rgba(255,255,255,0.8);
+    --card-bg: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,6 +14,7 @@
         --muted: #aaa;
         --border: #222222;
         --surface: rgba(0,0,0,0.72);
+        --card-bg: #1a1a1a;
     }
 }
 
@@ -23,6 +25,7 @@ html.theme-dark {
     --muted: #aaa;
     --border: #222222;
     --surface: rgba(0,0,0,0.72);
+    --card-bg: #1a1a1a;
 }
 
 
@@ -212,13 +215,13 @@ a:hover {
 .case-list__heading {
     grid-column: 1 / -1;
     margin: 48px 0 -24px;
-    color: var(--muted);
-    font-size: 16px;
-    font-weight: 500;
 }
 
 .case-card {
     display: block;
+    padding-bottom: 32px;
+    background: var(--card-bg);
+    border-radius: 16px;
 }
 
 .case-card:hover {
@@ -227,20 +230,16 @@ a:hover {
 
 .case-card img {
     width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
     display: block;
     margin: 0 0 20px;
-    border-radius: 16px;
-    transition: transform 0.25s ease, opacity 0.25s ease;
-}
-
-.case-card:hover img {
-    transform: translateY(-4px);
-    opacity: 0.92;
+    border-radius: 16px 16px 0 0;
 }
 
 .case-card__date,
 .case-card__title {
-    margin: 0;
+    margin: 0 32px;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.3;
@@ -541,7 +540,13 @@ a:hover {
 
     .case-card__date,
     .case-card__title {
+        margin-left: 24px;
+        margin-right: 24px;
         font-size: 16px;
+    }
+
+    .case-card {
+        padding-bottom: 24px;
     }
 
     .project-list {
